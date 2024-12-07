@@ -14,3 +14,16 @@ config/name="LaPatilla"
 run/main_scene="res://bin/views/menu/menu.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1980
+window/size/viewport_height=1080
+window/size/window_width_override=300
+window/size/window_height_override=200
+window/stretch/mode="viewport"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
