@@ -64,3 +64,6 @@ scale = Vector2(0.2, 0.2)
 sprite_frames = SubResource("SpriteFrames_ggf4s")
 animation = &"idle"
 frame_progress = 0.172502
+
+[node name="Camera2D" type="Camera2D" parent="."]
+offset = Vector2(850, -350)

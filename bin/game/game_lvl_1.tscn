@@ -8,7 +8,7 @@ size = Vector2(2123, 137)
 
 [node name="GameLvl1" type="Node2D"]
 
-[node name="Parallax2D" type="Parallax2D" parent="."]
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="img" type="Sprite2D" parent="Parallax2D"]
 position = Vector2(1006, 542.75)
