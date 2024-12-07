@@ -9,10 +9,15 @@ size = Vector2(2123, 137)
 [node name="GameLvl1" type="Node2D"]
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+follow_viewport_enabled = true
 
-[node name="img" type="Sprite2D" parent="Parallax2D"]
-position = Vector2(1006, 542.75)
-scale = Vector2(3.36076, 3.07995)
+[node name="Parallax2D" type="Parallax2D" parent="ParallaxBackground"]
+scroll_scale = Vector2(0.1, 0.1)
+repeat_size = Vector2(2530, 0)
+
+[node name="img" type="Sprite2D" parent="ParallaxBackground/Parallax2D"]
+position = Vector2(1006, 534)
+scale = Vector2(4, 4)
 texture = ExtResource("1_07dyt")
 
 [node name="Player" parent="." instance=ExtResource("2_weomq")]
