@@ -1,0 +1,595 @@
+[gd_scene load_steps=9 format=3 uid="uid://dh4dwdegsh65v"]
+
+[ext_resource type="Script" path="res://scripts/option.gd" id="1_5uo82"]
+[ext_resource type="Texture2D" uid="uid://bcan8ptmo1835" path="res://assets/fondos/menu.png" id="1_ne02l"]
+[ext_resource type="Texture2D" uid="uid://eq0mdx325dfm" path="res://assets/fondos/AVATAR_ContainerBox.png" id="3_ufvi3"]
+[ext_resource type="Texture2D" uid="uid://cnmetxk0xpoyn" path="res://assets/botones/Big_PANEL_BorderSelected.png" id="4_kfqd6"]
+[ext_resource type="Texture2D" uid="uid://d003u60x3cgg8" path="res://assets/botones/Big_PANEL_Border.png" id="4_v5qbh"]
+[ext_resource type="Texture2D" uid="uid://f6neo66smnos" path="res://assets/botones/Icon_DivisorLine_Horizontal2.png" id="6_0nuyd"]
+[ext_resource type="FontFile" uid="uid://byfergbhqst7h" path="res://assets/fuentes/Librestile/LibrestileExtBoldOblique.ttf" id="6_dyriv"]
+[ext_resource type="Texture2D" uid="uid://ceucmvln8rjlf" path="res://assets/botones/General_Icon_Cancel_Close.png" id="8_84rn6"]
+
+[node name="OptionMenu1" type="CanvasLayer"]
+
+[node name="Controller" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5uo82")
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Controller"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ne02l")
+
+[node name="ControlPanelOption" type="Control" parent="Controller"]
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="TextureRectcapa1" type="TextureRect" parent="Controller/ControlPanelOption"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -555.5
+offset_top = -301.0
+offset_right = 555.5
+offset_bottom = 301.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_ufvi3")
+expand_mode = 1
+
+[node name="TextureRectcapa2" type="TextureRect" parent="Controller/ControlPanelOption"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -512.0
+offset_top = -260.0
+offset_right = 512.0
+offset_bottom = 260.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_ufvi3")
+
+[node name="ControlButtonPrincipales" type="Control" parent="Controller/ControlPanelOption"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -430.0
+offset_top = 120.0
+offset_right = 434.0
+offset_bottom = 192.0
+grow_horizontal = 2
+metadata/_edit_lock_ = true
+
+[node name="TextureButton1" type="TextureButton" parent="Controller/ControlPanelOption/ControlButtonPrincipales"]
+layout_mode = 0
+offset_left = 74.0
+offset_top = 8.0
+offset_right = 282.0
+offset_bottom = 56.0
+texture_normal = ExtResource("4_kfqd6")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Controller/ControlPanelOption/ControlButtonPrincipales/TextureButton1"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "CONTROLES"
+
+[node name="TextureButton2" type="TextureButton" parent="Controller/ControlPanelOption/ControlButtonPrincipales"]
+layout_mode = 0
+offset_left = 298.0
+offset_top = 8.0
+offset_right = 522.0
+offset_bottom = 56.0
+texture_normal = ExtResource("4_v5qbh")
+texture_pressed = ExtResource("4_kfqd6")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Controller/ControlPanelOption/ControlButtonPrincipales/TextureButton2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "SONIDO"
+
+[node name="TextureButton3" type="TextureButton" parent="Controller/ControlPanelOption/ControlButtonPrincipales"]
+layout_mode = 0
+offset_left = 538.0
+offset_top = 8.0
+offset_right = 746.0
+offset_bottom = 56.0
+texture_normal = ExtResource("4_v5qbh")
+texture_pressed = ExtResource("4_kfqd6")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Controller/ControlPanelOption/ControlButtonPrincipales/TextureButton3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "CONTROLES"
+
+[node name="KeysControl" type="Control" parent="Controller/ControlPanelOption"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -135.0
+offset_right = 320.0
+offset_bottom = 138.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[node name="Label" type="Label" parent="Controller/ControlPanelOption/KeysControl"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -66.5
+offset_top = 5.0
+offset_right = 66.5
+offset_bottom = 29.0
+grow_horizontal = 2
+text = "Control de Teclas"
+
+[node name="TextureButtonUp" type="TextureButton" parent="Controller/ControlPanelOption/KeysControl"]
+layout_mode = 0
+offset_left = 58.0
+offset_top = 28.0
+offset_right = 148.0
+offset_bottom = 63.0
+texture_normal = ExtResource("3_ufvi3")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label2" type="Label" parent="Controller/ControlPanelOption/KeysControl/TextureButtonUp"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -28.0
+offset_top = -6.5
+offset_right = 30.0
+offset_bottom = 6.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("6_dyriv")
+theme_override_font_sizes/font_size = 12
+text = "Arriba"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="TextureButton5" type="TextureButton" parent="Controller/ControlPanelOption/KeysControl/TextureButtonUp"]
+layout_mode = 0
+offset_left = 471.0
+offset_top = -4.0
+offset_right = 518.0
+offset_bottom = 38.0
+texture_normal = ExtResource("4_kfqd6")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextEdit" type="TextEdit" parent="Controller/ControlPanelOption/KeysControl/TextureButtonUp/TextureButton5"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.5
+offset_top = -19.0
+offset_right = 20.5
+offset_bottom = 19.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ImagenDivisor" type="TextureRect" parent="Controller/ControlPanelOption/KeysControl/TextureButtonUp"]
+layout_mode = 0
+offset_left = 59.0
+offset_top = -1.0
+offset_right = 498.0
+offset_bottom = 39.0
+texture = ExtResource("6_0nuyd")
+expand_mode = 1
+
+[node name="TextureButtonDown" type="TextureButton" parent="Controller/ControlPanelOption/KeysControl"]
+layout_mode = 0
+offset_left = 58.0
+offset_top = 81.0
+offset_right = 148.0
+offset_bottom = 116.0
+texture_normal = ExtResource("3_ufvi3")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label2" type="Label" parent="Controller/ControlPanelOption/KeysControl/TextureButtonDown"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -28.0
+offset_top = -6.5
+offset_right = 30.0
+offset_bottom = 6.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("6_dyriv")
+theme_override_font_sizes/font_size = 12
+text = "Arriba"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="TextureButton5" type="TextureButton" parent="Controller/ControlPanelOption/KeysControl/TextureButtonDown"]
+layout_mode = 0
+offset_left = 471.0
+offset_top = -4.0
+offset_right = 518.0
+offset_bottom = 38.0
+texture_normal = ExtResource("4_kfqd6")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextEdit" type="TextEdit" parent="Controller/ControlPanelOption/KeysControl/TextureButtonDown/TextureButton5"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.5
+offset_top = -19.0
+offset_right = 20.5
+offset_bottom = 19.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ImagenDivisor" type="TextureRect" parent="Controller/ControlPanelOption/KeysControl/TextureButtonDown"]
+layout_mode = 0
+offset_left = 59.0
+offset_top = -1.0
+offset_right = 498.0
+offset_bottom = 39.0
+texture = ExtResource("6_0nuyd")
+expand_mode = 1
+
+[node name="TextureButtonLeft" type="TextureButton" parent="Controller/ControlPanelOption/KeysControl"]
+layout_mode = 0
+offset_left = 58.0
+offset_top = 132.0
+offset_right = 148.0
+offset_bottom = 167.0
+texture_normal = ExtResource("3_ufvi3")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label2" type="Label" parent="Controller/ControlPanelOption/KeysControl/TextureButtonLeft"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -28.0
+offset_top = -6.5
+offset_right = 30.0
+offset_bottom = 6.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("6_dyriv")
+theme_override_font_sizes/font_size = 12
+text = "Arriba"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="TextureButton5" type="TextureButton" parent="Controller/ControlPanelOption/KeysControl/TextureButtonLeft"]
+layout_mode = 0
+offset_left = 471.0
+offset_top = -4.0
+offset_right = 518.0
+offset_bottom = 38.0
+texture_normal = ExtResource("4_kfqd6")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextEdit" type="TextEdit" parent="Controller/ControlPanelOption/KeysControl/TextureButtonLeft/TextureButton5"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.5
+offset_top = -19.0
+offset_right = 20.5
+offset_bottom = 19.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ImagenDivisor" type="TextureRect" parent="Controller/ControlPanelOption/KeysControl/TextureButtonLeft"]
+layout_mode = 0
+offset_left = 59.0
+offset_top = -1.0
+offset_right = 498.0
+offset_bottom = 39.0
+texture = ExtResource("6_0nuyd")
+expand_mode = 1
+
+[node name="TextureButtonRight" type="TextureButton" parent="Controller/ControlPanelOption/KeysControl"]
+layout_mode = 0
+offset_left = 58.0
+offset_top = 181.0
+offset_right = 148.0
+offset_bottom = 216.0
+texture_normal = ExtResource("3_ufvi3")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label2" type="Label" parent="Controller/ControlPanelOption/KeysControl/TextureButtonRight"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -28.0
+offset_top = -6.5
+offset_right = 30.0
+offset_bottom = 6.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("6_dyriv")
+theme_override_font_sizes/font_size = 12
+text = "Arriba"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="TextureButton5" type="TextureButton" parent="Controller/ControlPanelOption/KeysControl/TextureButtonRight"]
+layout_mode = 0
+offset_left = 471.0
+offset_top = -4.0
+offset_right = 518.0
+offset_bottom = 38.0
+texture_normal = ExtResource("4_kfqd6")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextEdit" type="TextEdit" parent="Controller/ControlPanelOption/KeysControl/TextureButtonRight/TextureButton5"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.5
+offset_top = -19.0
+offset_right = 20.5
+offset_bottom = 19.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ImagenDivisor" type="TextureRect" parent="Controller/ControlPanelOption/KeysControl/TextureButtonRight"]
+layout_mode = 0
+offset_left = 59.0
+offset_top = -1.0
+offset_right = 498.0
+offset_bottom = 39.0
+texture = ExtResource("6_0nuyd")
+expand_mode = 1
+
+[node name="TextureButtonSensibilida" type="TextureButton" parent="Controller/ControlPanelOption/KeysControl"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 236.0
+offset_right = 154.0
+offset_bottom = 271.0
+texture_normal = ExtResource("3_ufvi3")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label2" type="Label" parent="Controller/ControlPanelOption/KeysControl/TextureButtonSensibilida"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -52.0
+offset_top = -6.5
+offset_right = 51.0
+offset_bottom = 6.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("6_dyriv")
+theme_override_font_sizes/font_size = 12
+text = "Sensibilidad"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="TextureButton5" type="TextureButton" parent="Controller/ControlPanelOption/KeysControl/TextureButtonSensibilida"]
+layout_mode = 0
+offset_left = 487.0
+offset_top = -4.0
+offset_right = 536.0
+offset_bottom = 38.0
+texture_normal = ExtResource("4_kfqd6")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextEdit" type="TextEdit" parent="Controller/ControlPanelOption/KeysControl/TextureButtonSensibilida/TextureButton5"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -22.5
+offset_top = -19.0
+offset_right = 22.5
+offset_bottom = 19.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" type="HSlider" parent="Controller/ControlPanelOption/KeysControl/TextureButtonSensibilida"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 55.0
+offset_top = -19.5
+offset_right = 425.0
+offset_bottom = 20.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ControlButton" type="Control" parent="Controller/ControlPanelOption"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = 146.0
+offset_right = 128.0
+offset_bottom = 186.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[node name="TextureButton5" type="TextureButton" parent="Controller/ControlPanelOption/ControlButton"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -43.0
+offset_right = 125.0
+grow_vertical = 0
+texture_normal = ExtResource("3_ufvi3")
+texture_pressed = ExtResource("4_kfqd6")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Controller/ControlPanelOption/ControlButton/TextureButton5"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Guardar"
+
+[node name="TextureButton6" type="TextureButton" parent="Controller/ControlPanelOption/ControlButton"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -125.0
+offset_top = -43.0
+grow_horizontal = 0
+grow_vertical = 0
+texture_normal = ExtResource("3_ufvi3")
+texture_pressed = ExtResource("4_kfqd6")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Controller/ControlPanelOption/ControlButton/TextureButton6"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Reset"
+
+[node name="TextureButton" type="TextureButton" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -150.0
+offset_top = 78.0
+offset_right = -110.0
+offset_bottom = 121.0
+grow_horizontal = 0
+texture_normal = ExtResource("8_84rn6")
+ignore_texture_size = true
+stretch_mode = 0
+
+[connection signal="pressed" from="Controller/ControlPanelOption/ControlButtonPrincipales/TextureButton1" to="Controller" method="_on_texture_button_1_pressed"]
+[connection signal="pressed" from="Controller/ControlPanelOption/ControlButtonPrincipales/TextureButton2" to="Controller" method="_on_texture_button_2_pressed"]
+[connection signal="pressed" from="Controller/ControlPanelOption/ControlButtonPrincipales/TextureButton3" to="Controller" method="_on_texture_button_3_pressed"]
+[connection signal="pressed" from="TextureButton" to="Controller" method="_on_texture_button_pressed"]
