@@ -11,7 +11,7 @@ size = Vector2(2123, 137)
 [node name="Parallax2D" type="Parallax2D" parent="."]
 
 [node name="img" type="Sprite2D" parent="Parallax2D"]
-position = Vector2(1006, 555.75)
+position = Vector2(1006, 542.75)
 scale = Vector2(3.36076, 3.07995)
 texture = ExtResource("1_07dyt")
 

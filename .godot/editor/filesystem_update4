@@ -1,5 +1,5 @@
+res://bin/views/menu/menu.tscn
+res://bin/game/game_lvl_1.tscn
 res://bin/views/option/option1.tscn
 res://bin/views/option/option2.tscn
 res://bin/views/option/option3.tscn
-res://scripts/menu.gd
-res://bin/views/menu/menu.tscn

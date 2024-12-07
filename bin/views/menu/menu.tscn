@@ -167,5 +167,6 @@ theme_override_fonts/font = ExtResource("6_oqh5d")
 theme_override_font_sizes/font_size = 22
 text = "SALIR"
 
+[connection signal="pressed" from="PanelMenu/PanelOption/TextureButton1" to="." method="_on_texture_button_1_pressed"]
 [connection signal="pressed" from="PanelMenu/PanelOption/ButtonOption" to="." method="_on_button_option_pressed"]
 [connection signal="pressed" from="PanelMenu/PanelOption/TextureButton3" to="." method="_on_texture_button_3_pressed"]
