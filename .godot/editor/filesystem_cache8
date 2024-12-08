@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1733677041
+::res://::1733677588
 icon.svg::CompressedTexture2D::1744855980132017205::1733676289::1733676484::1::::<><>::
 ::res://assets/::1733676426
 ::res://assets/botones/::1733676485
@@ -105,16 +105,16 @@ nubes3.png::CompressedTexture2D::295993559165286734::1733676426::1733676483::1::
 nubes 2.png::CompressedTexture2D::5537825181071777959::1733676426::1733676483::1::::<><>::
 nubes.png::CompressedTexture2D::5266638973973930785::1733676426::1733676484::1::::<><>::
 ::res://bin/::1733676289
-::res://bin/game/::1733676984
-game_lvl_1.tscn::PackedScene::4170032300024116479::1733676984::0::1::::<><>::uid://i86gnhdmu7wm::::res://assets/fondos/back_1.png<>uid://dsdtwalj4rb6q::::res://assets/sprites/nubes/noche.png<>uid://ugwkjk05qb5u::::res://bin/player/player.tscn<>uid://chbg1lionojhp::::res://assets/sprites/nubes/nubes.png<>uid://d2trdu3ep3w5g::::res://bin/tiles/tile_map_layer.tscn<>uid://bake8qc4mnss6::::res://assets/sonidos/nature020.mp3<>res://scripts/audio.gd<>uid://dug255jlwanhc::::res://assets/sonidos/000770815_prev.mp3
+::res://bin/game/::1733677452
+game_lvl_1.tscn::PackedScene::4170032300024116479::1733677452::0::1::::<><>::uid://i86gnhdmu7wm::::res://assets/fondos/back_1.png<>uid://dsdtwalj4rb6q::::res://assets/sprites/nubes/noche.png<>uid://ugwkjk05qb5u::::res://bin/player/player.tscn<>uid://chbg1lionojhp::::res://assets/sprites/nubes/nubes.png<>uid://d2trdu3ep3w5g::::res://bin/tiles/tile_map_layer.tscn<>uid://bake8qc4mnss6::::res://assets/sonidos/nature020.mp3<>res://scripts/audio.gd<>uid://dug255jlwanhc::::res://assets/sonidos/000770815_prev.mp3
 ::res://bin/player/::1733676426
 player.gd::GDScript::-1::1733676426::0::1::::<>CharacterBody2D<>::
 player.tscn::PackedScene::1417517260399719700::1733676289::0::1::::<><>::res://bin/player/player.gd<>uid://c8rtkhxoond04::::res://assets/player/idle/fotograma0000.png<>uid://cdtvg5yxbwg71::::res://assets/player/idle/fotograma0005.png<>uid://cqfp1r5f6qomo::::res://assets/player/idle/fotograma0010.png<>uid://bqc3l7oh8gfjk::::res://assets/player/move/fotograma0000.png<>uid://dayxeetx8ywo7::::res://assets/player/move/fotograma0003.png<>uid://cp6a7jv3mdrvj::::res://assets/player/move/fotograma0006.png<>uid://cruyguae61im8::::res://assets/player/move/fotograma0009.png<>uid://clkvnhm8l58l1::::res://assets/player/move/fotograma0012.png
 ::res://bin/tiles/::1733676289
 tile_map_layer.tscn::PackedScene::9094622646816498090::1733676289::0::1::::<><>::uid://dkl7w1a5xje0l::::res://assets/fondos/tilemaplvl1.png
 ::res://bin/views/::1733676289
-::res://bin/views/menu/::1733676961
-menu.tscn::PackedScene::4331786922570543504::1733676961::0::1::::<><>::res://scripts/menu.gd<>uid://bcan8ptmo1835::::res://assets/fondos/menu.png<>uid://d003u60x3cgg8::::res://assets/botones/Big_PANEL_Border.png<>uid://ccgir1f5o60fl::::res://assets/botones/Brincar.png<>uid://cmbn2s2684x3s::::res://assets/botones/Cyan.png<>uid://byfergbhqst7h::::res://assets/fuentes/Librestile/LibrestileExtBoldOblique.ttf<>uid://bles8tq4umjd3::::res://assets/botones/Red.png
+::res://bin/views/menu/::1733677132
+menu.tscn::PackedScene::4331786922570543504::1733677132::0::1::::<><>::res://scripts/menu.gd<>uid://bcan8ptmo1835::::res://assets/fondos/menu.png<>uid://d003u60x3cgg8::::res://assets/botones/Big_PANEL_Border.png<>uid://ccgir1f5o60fl::::res://assets/botones/Brincar.png<>uid://cmbn2s2684x3s::::res://assets/botones/Cyan.png<>uid://byfergbhqst7h::::res://assets/fuentes/Librestile/LibrestileExtBoldOblique.ttf<>uid://bles8tq4umjd3::::res://assets/botones/Red.png
 ::res://bin/views/option/::1733676289
 option1.tscn::PackedScene::7710672513903717157::1733676289::0::1::::<><>::res://scripts/option.gd<>uid://bcan8ptmo1835::::res://assets/fondos/menu.png<>uid://eq0mdx325dfm::::res://assets/fondos/AVATAR_ContainerBox.png<>uid://cnmetxk0xpoyn::::res://assets/botones/Big_PANEL_BorderSelected.png<>uid://d003u60x3cgg8::::res://assets/botones/Big_PANEL_Border.png<>uid://ft5x8rpjmnhf::::res://assets/fuentes/fonts/otf/G8321-Bold.otf<>uid://f6neo66smnos::::res://assets/botones/Icon_DivisorLine_Horizontal2.png<>uid://ceucmvln8rjlf::::res://assets/botones/General_Icon_Cancel_Close.png
 option2.tscn::PackedScene::4844420164545965512::1733676289::0::1::::<><>::res://scripts/option.gd<>uid://bcan8ptmo1835::::res://assets/fondos/menu.png<>uid://eq0mdx325dfm::::res://assets/fondos/AVATAR_ContainerBox.png<>uid://d003u60x3cgg8::::res://assets/botones/Big_PANEL_Border.png<>uid://cnmetxk0xpoyn::::res://assets/botones/Big_PANEL_BorderSelected.png<>uid://ft5x8rpjmnhf::::res://assets/fuentes/fonts/otf/G8321-Bold.otf<>uid://ceucmvln8rjlf::::res://assets/botones/General_Icon_Cancel_Close.png
