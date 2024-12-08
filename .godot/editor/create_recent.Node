@@ -1,10 +1,11 @@
+Parallax2D
+Control
+AudioStreamPlayer
 TileMapLayer
 TileMap
-Parallax2D
 CanvasLayer
 OptionButton
 HSlider
-Control
 TextureRect
 Node2D
 TextureButton
