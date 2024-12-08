@@ -1,3 +1,8 @@
 res://bin/views/menu/menu.tscn
 res://bin/player/player.tscn
 res://bin/game/game_lvl_1.tscn
+res://scripts/audio.gd
+res://scripts/game_lvl_1.gd
+res://scripts/menu.gd
+res://scripts/option.gd
+res://bin/player/player.gd
