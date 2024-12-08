@@ -15,28 +15,32 @@
 follow_viewport_enabled = true
 
 [node name="Parallax2D" type="Parallax2D" parent="ParallaxBackground"]
-scroll_scale = Vector2(0.1, 0.1)
+visible = false
 repeat_size = Vector2(2000, 1500)
 
 [node name="img" type="Sprite2D" parent="ParallaxBackground/Parallax2D"]
+modulate = Color(0, 0, 0, 1)
 position = Vector2(667.25, 611.25)
 scale = Vector2(0.792032, 0.72074)
 texture = ExtResource("1_3kciv")
 
 [node name="Parallax2D2" type="Parallax2D" parent="ParallaxBackground"]
+scroll_scale = Vector2(0.1, 0.1)
+repeat_size = Vector2(5260, 0)
 
 [node name="img" type="Sprite2D" parent="ParallaxBackground/Parallax2D2"]
-position = Vector2(1680, 148)
-scale = Vector2(2.74167, 2.46032)
+position = Vector2(1680, 488)
+scale = Vector2(2.74167, 3.80953)
 texture = ExtResource("2_ktdtp")
 
 [node name="Parallax2D3" type="Parallax2D" parent="ParallaxBackground"]
 scale = Vector2(0.5, 0.5)
+scroll_scale = Vector2(0.2, 0.2)
 repeat_size = Vector2(3500, 0)
 
 [node name="img" type="Sprite2D" parent="ParallaxBackground/Parallax2D3"]
-position = Vector2(1288, 466)
-scale = Vector2(3.2242, 1.73873)
+position = Vector2(3432, 272)
+scale = Vector2(5.54079, 2.77457)
 texture = ExtResource("3_o7kif")
 
 [node name="Player" parent="." instance=ExtResource("2_weomq")]
