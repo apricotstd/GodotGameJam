@@ -228,6 +228,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="TextureButton6" type="TextureButton" parent="Sonido/ControlPanelOption/SoundControl/TextureButtonMusica"]
+layout_mode = 0
 offset_left = 552.0
 offset_top = 14.0
 offset_right = 641.0
@@ -282,6 +283,7 @@ vertical_alignment = 1
 autowrap_mode = 3
 
 [node name="TextureButton6" type="TextureButton" parent="Sonido/ControlPanelOption/SoundControl/TextureButtonMusica2"]
+layout_mode = 0
 offset_left = 552.0
 offset_top = 14.0
 offset_right = 641.0
