@@ -1,13 +1,12 @@
-[gd_scene load_steps=9 format=4 uid="uid://b0n828cwpxj08"]
+[gd_scene load_steps=8 format=4 uid="uid://b0n828cwpxj08"]
 
 [ext_resource type="Texture2D" uid="uid://i86gnhdmu7wm" path="res://assets/fondos/back_1.png" id="1_3kciv"]
 [ext_resource type="Texture2D" uid="uid://dsdtwalj4rb6q" path="res://assets/sprites/nubes/noche.png" id="2_ktdtp"]
 [ext_resource type="PackedScene" uid="uid://ugwkjk05qb5u" path="res://bin/player/player.tscn" id="2_weomq"]
 [ext_resource type="Texture2D" uid="uid://chbg1lionojhp" path="res://assets/sprites/nubes/nubes.png" id="3_o7kif"]
 [ext_resource type="PackedScene" uid="uid://d2trdu3ep3w5g" path="res://bin/tiles/tile_map_layer.tscn" id="3_xkyvy"]
-[ext_resource type="AudioStream" uid="uid://bake8qc4mnss6" path="res://assets/sonidos/nature020.mp3" id="4_vl1f1"]
-[ext_resource type="AudioStream" uid="uid://dug255jlwanhc" path="res://assets/sonidos/000770815_prev.mp3" id="6_fvpyq"]
 [ext_resource type="Script" path="res://scripts/sonidos.gd" id="6_rtcd8"]
+[ext_resource type="AudioStream" uid="uid://xsal50sch6os" path="res://assets/sonidos/terror-Patilla.mp3" id="7_7fky4"]
 
 [node name="GameLvl1" type="Node2D"]
 
@@ -54,12 +53,11 @@ tile_map_data = PackedByteArray("AAAAADsAAAABAAEAAAAAADwAAAABAAIAAAAAAD0AAAABAAM
 script = ExtResource("6_rtcd8")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="GrupSong"]
-stream = ExtResource("6_fvpyq")
-volume_db = -25.06
+stream = ExtResource("7_7fky4")
+volume_db = -1.253
+autoplay = true
 parameters/looping = true
 
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="GrupSong"]
-stream = ExtResource("4_vl1f1")
 volume_db = -22.299
 pitch_scale = 1.1
-parameters/looping = true
