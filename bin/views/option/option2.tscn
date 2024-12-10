@@ -1,11 +1,15 @@
-[gd_scene load_steps=8 format=3 uid="uid://cbaw5lsgu10xg"]
+[gd_scene load_steps=12 format=3 uid="uid://cbaw5lsgu10xg"]
 
 [ext_resource type="Script" path="res://scripts/option.gd" id="1_1flis"]
-[ext_resource type="Texture2D" uid="uid://bcan8ptmo1835" path="res://assets/fondos/menu.png" id="1_2dka6"]
+[ext_resource type="Texture2D" uid="uid://cminpqufnjktk" path="res://assets/sprites/nubes/cielo.png" id="2_jw7eh"]
 [ext_resource type="Texture2D" uid="uid://eq0mdx325dfm" path="res://assets/fondos/AVATAR_ContainerBox.png" id="3_qc7lw"]
-[ext_resource type="Texture2D" uid="uid://d003u60x3cgg8" path="res://assets/botones/Big_PANEL_Border.png" id="4_edeu5"]
+[ext_resource type="Texture2D" uid="uid://eixe3l01jlv1" path="res://assets/fondos/terreno.png" id="3_u6okh"]
 [ext_resource type="Texture2D" uid="uid://cnmetxk0xpoyn" path="res://assets/botones/Big_PANEL_BorderSelected.png" id="4_fsl5y"]
+[ext_resource type="Texture2D" uid="uid://s4hjdinjkg2b" path="res://assets/botones/marco6.png" id="4_uipl8"]
+[ext_resource type="Texture2D" uid="uid://b6jw865kwau2e" path="res://assets/botones/boton-2.png" id="5_43oju"]
 [ext_resource type="FontFile" uid="uid://ft5x8rpjmnhf" path="res://assets/fuentes/fonts/otf/G8321-Bold.otf" id="5_pa8wg"]
+[ext_resource type="FontFile" uid="uid://byfergbhqst7h" path="res://assets/fuentes/Librestile/LibrestileExtBoldOblique.ttf" id="6_sn2st"]
+[ext_resource type="Texture2D" uid="uid://dg7foil82w1aj" path="res://assets/botones/boton-1.png" id="7_y0v13"]
 [ext_resource type="Texture2D" uid="uid://ceucmvln8rjlf" path="res://assets/botones/General_Icon_Cancel_Close.png" id="8_qsdl7"]
 
 [node name="CanvasLayer" type="CanvasLayer"]
@@ -19,157 +23,165 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_1flis")
 
-[node name="TextureRect" type="TextureRect" parent="Sonido"]
+[node name="Background" type="TextureRect" parent="Sonido"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_2dka6")
-
-[node name="ControlPanelOption" type="Control" parent="Sonido"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="TextureRectcapa1" type="TextureRect" parent="Sonido/ControlPanelOption"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("3_qc7lw")
+texture = ExtResource("2_jw7eh")
 expand_mode = 1
 
-[node name="TextureRectcapa2" type="TextureRect" parent="Sonido/ControlPanelOption"]
+[node name="Background2" type="TextureRect" parent="Sonido"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_u6okh")
+expand_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="Sonido"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -838.0
-offset_top = -460.0
-offset_right = 842.0
-offset_bottom = 460.0
+offset_left = -516.0
+offset_top = -472.0
+offset_right = 516.0
+offset_bottom = 472.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("3_qc7lw")
+texture = ExtResource("4_uipl8")
+expand_mode = 1
 
-[node name="TextureButton" type="TextureButton" parent="Sonido/ControlPanelOption/TextureRectcapa2"]
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -136.0
-offset_top = 9.0
-offset_right = -35.0
-offset_bottom = 103.0
-grow_horizontal = 0
-texture_normal = ExtResource("8_qsdl7")
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="ControlButtonPrincipales" type="Control" parent="Sonido/ControlPanelOption"]
+[node name="ControlButtonPrincipales" type="Control" parent="Sonido/TextureRect"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -615.0
-offset_top = 185.0
-offset_right = 616.0
-offset_bottom = 280.0
+offset_left = -430.0
+offset_top = 146.0
+offset_right = 426.0
+offset_bottom = 241.0
 grow_horizontal = 2
 
-[node name="TextureButton1" type="TextureButton" parent="Sonido/ControlPanelOption/ControlButtonPrincipales"]
-layout_mode = 0
-offset_left = 74.0
-offset_right = 282.0
-offset_bottom = 95.0
-texture_normal = ExtResource("4_edeu5")
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="Label" type="Label" parent="Sonido/ControlPanelOption/ControlButtonPrincipales/TextureButton1"]
+[node name="TextureButton1" type="TextureButton" parent="Sonido/TextureRect/ControlButtonPrincipales"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -11.5
-offset_right = 20.0
-offset_bottom = 11.5
+offset_left = -124.0
+offset_top = -47.5
+offset_right = 124.0
+offset_bottom = 47.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("5_pa8wg")
-theme_override_font_sizes/font_size = 25
+texture_normal = ExtResource("7_y0v13")
+texture_pressed = ExtResource("5_43oju")
+texture_hover = ExtResource("5_43oju")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label2" type="Label" parent="Sonido/TextureRect/ControlButtonPrincipales/TextureButton1"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -59.0
+offset_top = -14.5
+offset_right = 55.0
+offset_bottom = 8.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.674768, 0.811164, 0.289357, 1)
+theme_override_colors/font_shadow_color = Color(0.0358673, 0.110612, 0.0470687, 1)
+theme_override_colors/font_outline_color = Color(0.242738, 0.506672, 0.499439, 1)
+theme_override_fonts/font = ExtResource("6_sn2st")
+theme_override_font_sizes/font_size = 24
 text = "CONTROLES"
 
-[node name="TextureButton2" type="TextureButton" parent="Sonido/ControlPanelOption/ControlButtonPrincipales"]
+[node name="TextureButton2" type="TextureButton" parent="Sonido/TextureRect/ControlButtonPrincipales"]
 layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -124.0
-offset_right = 100.0
-offset_bottom = 95.0
-grow_horizontal = 2
-texture_normal = ExtResource("4_fsl5y")
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 4.0
+offset_top = -47.5
+offset_right = 268.0
+offset_bottom = 47.5
+grow_vertical = 2
+texture_normal = ExtResource("5_43oju")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="Label" type="Label" parent="Sonido/ControlPanelOption/ControlButtonPrincipales/TextureButton2"]
+[node name="Label2" type="Label" parent="Sonido/TextureRect/ControlButtonPrincipales/TextureButton2"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -11.5
-offset_right = 20.0
-offset_bottom = 11.5
+offset_left = -59.0
+offset_top = -14.5
+offset_right = 55.0
+offset_bottom = 8.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("5_pa8wg")
-theme_override_font_sizes/font_size = 25
+theme_override_colors/font_color = Color(0.674768, 0.811164, 0.289357, 1)
+theme_override_colors/font_shadow_color = Color(0.0358673, 0.110612, 0.0470687, 1)
+theme_override_colors/font_outline_color = Color(0.242738, 0.506672, 0.499439, 1)
+theme_override_fonts/font = ExtResource("6_sn2st")
+theme_override_font_sizes/font_size = 24
 text = "SONIDO"
 
-[node name="TextureButton3" type="TextureButton" parent="Sonido/ControlPanelOption/ControlButtonPrincipales"]
-layout_mode = 0
-offset_left = 950.0
-offset_right = 1158.0
-offset_bottom = 95.0
-texture_normal = ExtResource("4_edeu5")
-texture_pressed = ExtResource("4_fsl5y")
+[node name="TextureButton3" type="TextureButton" parent="Sonido/TextureRect/ControlButtonPrincipales"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -256.0
+offset_top = -47.5
+offset_bottom = 47.5
+grow_horizontal = 0
+grow_vertical = 2
+texture_normal = ExtResource("7_y0v13")
+texture_pressed = ExtResource("5_43oju")
+texture_hover = ExtResource("5_43oju")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="Label" type="Label" parent="Sonido/ControlPanelOption/ControlButtonPrincipales/TextureButton3"]
+[node name="Label2" type="Label" parent="Sonido/TextureRect/ControlButtonPrincipales/TextureButton3"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -11.5
-offset_right = 20.0
-offset_bottom = 11.5
+offset_left = -59.0
+offset_top = -14.5
+offset_right = 55.0
+offset_bottom = 8.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("5_pa8wg")
-theme_override_font_sizes/font_size = 25
+theme_override_colors/font_color = Color(0.674768, 0.811164, 0.289357, 1)
+theme_override_colors/font_shadow_color = Color(0.0358673, 0.110612, 0.0470687, 1)
+theme_override_colors/font_outline_color = Color(0.242738, 0.506672, 0.499439, 1)
+theme_override_fonts/font = ExtResource("6_sn2st")
+theme_override_font_sizes/font_size = 24
 text = "LENGUAJE"
 
-[node name="SoundControl" type="Control" parent="Sonido/ControlPanelOption"]
+[node name="SoundControl" type="Control" parent="Sonido/TextureRect"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -183,7 +195,7 @@ offset_bottom = 112.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TextureButtonMusica" type="TextureButton" parent="Sonido/ControlPanelOption/SoundControl"]
+[node name="TextureButtonMusica" type="TextureButton" parent="Sonido/TextureRect/SoundControl"]
 layout_mode = 0
 offset_left = -14.0
 offset_top = -4.0
@@ -193,7 +205,7 @@ texture_normal = ExtResource("3_qc7lw")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="Label2" type="Label" parent="Sonido/ControlPanelOption/SoundControl/TextureButtonMusica"]
+[node name="Label2" type="Label" parent="Sonido/TextureRect/SoundControl/TextureButtonMusica"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -213,7 +225,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
-[node name="ControlMusica" type="HSlider" parent="Sonido/ControlPanelOption/SoundControl/TextureButtonMusica"]
+[node name="ControlMusica" type="HSlider" parent="Sonido/TextureRect/SoundControl/TextureButtonMusica"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -227,7 +239,7 @@ offset_bottom = 20.5
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TextureButton6" type="TextureButton" parent="Sonido/ControlPanelOption/SoundControl/TextureButtonMusica"]
+[node name="TextureButton6" type="TextureButton" parent="Sonido/TextureRect/SoundControl/TextureButtonMusica"]
 layout_mode = 0
 offset_left = 552.0
 offset_top = 14.0
@@ -237,7 +249,7 @@ texture_normal = ExtResource("4_fsl5y")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="TextEdit" type="TextEdit" parent="Sonido/ControlPanelOption/SoundControl/TextureButtonMusica/TextureButton6"]
+[node name="TextEdit" type="TextEdit" parent="Sonido/TextureRect/SoundControl/TextureButtonMusica/TextureButton6"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -252,7 +264,7 @@ grow_horizontal = 2
 grow_vertical = 2
 metadata/_edit_lock_ = true
 
-[node name="TextureButtonMusica2" type="TextureButton" parent="Sonido/ControlPanelOption/SoundControl"]
+[node name="TextureButtonMusica2" type="TextureButton" parent="Sonido/TextureRect/SoundControl"]
 layout_mode = 0
 offset_left = -14.0
 offset_top = 110.0
@@ -262,7 +274,7 @@ texture_normal = ExtResource("3_qc7lw")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="Label2" type="Label" parent="Sonido/ControlPanelOption/SoundControl/TextureButtonMusica2"]
+[node name="Label2" type="Label" parent="Sonido/TextureRect/SoundControl/TextureButtonMusica2"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -282,7 +294,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
 
-[node name="TextureButton6" type="TextureButton" parent="Sonido/ControlPanelOption/SoundControl/TextureButtonMusica2"]
+[node name="TextureButton6" type="TextureButton" parent="Sonido/TextureRect/SoundControl/TextureButtonMusica2"]
 layout_mode = 0
 offset_left = 552.0
 offset_top = 14.0
@@ -292,7 +304,7 @@ texture_normal = ExtResource("4_fsl5y")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="TextEdit" type="TextEdit" parent="Sonido/ControlPanelOption/SoundControl/TextureButtonMusica2/TextureButton6"]
+[node name="TextEdit" type="TextEdit" parent="Sonido/TextureRect/SoundControl/TextureButtonMusica2/TextureButton6"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -307,7 +319,7 @@ grow_horizontal = 2
 grow_vertical = 2
 metadata/_edit_lock_ = true
 
-[node name="ControlMusica" type="HSlider" parent="Sonido/ControlPanelOption/SoundControl/TextureButtonMusica2"]
+[node name="ControlMusica" type="HSlider" parent="Sonido/TextureRect/SoundControl/TextureButtonMusica2"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -321,85 +333,105 @@ offset_bottom = 20.5
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ControlButton" type="Control" parent="Sonido/ControlPanelOption"]
+[node name="ControlButton" type="Control" parent="Sonido/TextureRect"]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = 7
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 1.0
 anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -128.0
-offset_top = 271.0
-offset_right = 128.0
-offset_bottom = 311.0
+anchor_bottom = 1.0
+offset_left = -174.0
+offset_top = -148.0
+offset_right = 162.0
+offset_bottom = -70.0
 grow_horizontal = 2
-grow_vertical = 2
+grow_vertical = 0
 
-[node name="TextureButton5" type="TextureButton" parent="Sonido/ControlPanelOption/ControlButton"]
+[node name="TextureButton5" type="TextureButton" parent="Sonido/TextureRect/ControlButton"]
 layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_left = -22.0
-offset_top = -75.0
-offset_right = 125.0
-offset_bottom = 5.0
+offset_top = -80.0
+offset_right = 168.0
 grow_vertical = 0
-texture_normal = ExtResource("3_qc7lw")
-texture_pressed = ExtResource("4_fsl5y")
+texture_normal = ExtResource("7_y0v13")
+texture_pressed = ExtResource("5_43oju")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="Label" type="Label" parent="Sonido/ControlPanelOption/ControlButton/TextureButton5"]
+[node name="Label2" type="Label" parent="Sonido/TextureRect/ControlButton/TextureButton5"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -11.5
-offset_right = 20.0
-offset_bottom = 11.5
+offset_left = -59.0
+offset_top = -14.5
+offset_right = 55.0
+offset_bottom = 8.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("5_pa8wg")
-theme_override_font_sizes/font_size = 20
+theme_override_colors/font_color = Color(0.674768, 0.811164, 0.289357, 1)
+theme_override_colors/font_shadow_color = Color(0.0358673, 0.110612, 0.0470687, 1)
+theme_override_colors/font_outline_color = Color(0.242738, 0.506672, 0.499439, 1)
+theme_override_fonts/font = ExtResource("6_sn2st")
+theme_override_font_sizes/font_size = 24
 text = "Guardar"
 
-[node name="TextureButton6" type="TextureButton" parent="Sonido/ControlPanelOption/ControlButton"]
+[node name="TextureButton6" type="TextureButton" parent="Sonido/TextureRect/ControlButton"]
 layout_mode = 1
-anchors_preset = 2
+anchors_preset = 3
+anchor_left = 1.0
 anchor_top = 1.0
+anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 137.0
-offset_top = -75.0
-offset_right = 284.0
-offset_bottom = 5.0
+offset_left = -160.0
+offset_top = -80.0
+offset_bottom = 2.0
+grow_horizontal = 0
 grow_vertical = 0
-texture_normal = ExtResource("3_qc7lw")
-texture_pressed = ExtResource("4_fsl5y")
+texture_normal = ExtResource("7_y0v13")
+texture_pressed = ExtResource("5_43oju")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="Label" type="Label" parent="Sonido/ControlPanelOption/ControlButton/TextureButton6"]
+[node name="Label2" type="Label" parent="Sonido/TextureRect/ControlButton/TextureButton6"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -11.5
-offset_right = 20.0
-offset_bottom = 11.5
+offset_left = -53.0
+offset_top = -16.5
+offset_right = 61.0
+offset_bottom = 8.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("5_pa8wg")
-theme_override_font_sizes/font_size = 20
+theme_override_colors/font_color = Color(0.674768, 0.811164, 0.289357, 1)
+theme_override_colors/font_shadow_color = Color(0.0358673, 0.110612, 0.0470687, 1)
+theme_override_colors/font_outline_color = Color(0.242738, 0.506672, 0.499439, 1)
+theme_override_fonts/font = ExtResource("6_sn2st")
+theme_override_font_sizes/font_size = 24
 text = "Reset"
 
-[connection signal="pressed" from="Sonido/ControlPanelOption/TextureRectcapa2/TextureButton" to="Sonido" method="_on_texture_button_pressed"]
-[connection signal="pressed" from="Sonido/ControlPanelOption/ControlButtonPrincipales/TextureButton1" to="Sonido" method="_on_texture_button_1_pressed"]
-[connection signal="pressed" from="Sonido/ControlPanelOption/ControlButtonPrincipales/TextureButton2" to="Sonido" method="_on_texture_button_2_pressed"]
-[connection signal="pressed" from="Sonido/ControlPanelOption/ControlButtonPrincipales/TextureButton3" to="Sonido" method="_on_texture_button_3_pressed"]
+[node name="TextureButton" type="TextureButton" parent="Sonido/TextureRect"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -130.0
+offset_top = 12.0
+offset_right = -29.0
+offset_bottom = 106.0
+grow_horizontal = 0
+texture_normal = ExtResource("8_qsdl7")
+ignore_texture_size = true
+stretch_mode = 0
+
+[connection signal="pressed" from="Sonido/TextureRect/ControlButtonPrincipales/TextureButton1" to="Sonido" method="_on_texture_button_1_pressed"]
+[connection signal="pressed" from="Sonido/TextureRect/ControlButtonPrincipales/TextureButton2" to="Sonido" method="_on_texture_button_2_pressed"]
+[connection signal="pressed" from="Sonido/TextureRect/ControlButtonPrincipales/TextureButton3" to="Sonido" method="_on_texture_button_3_pressed"]
+[connection signal="pressed" from="Sonido/TextureRect/TextureButton" to="Sonido" method="_on_texture_button_pressed"]
