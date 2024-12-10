@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://b2yl5r1qt84oi"]
+[gd_scene load_steps=10 format=3 uid="uid://b2yl5r1qt84oi"]
 
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_c8aoe"]
 [ext_resource type="Texture2D" uid="uid://bcan8ptmo1835" path="res://assets/fondos/menu.png" id="2_ugca0"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cmbn2s2684x3s" path="res://assets/botones/Cyan.png" id="5_chnsc"]
 [ext_resource type="FontFile" uid="uid://byfergbhqst7h" path="res://assets/fuentes/Librestile/LibrestileExtBoldOblique.ttf" id="6_oqh5d"]
 [ext_resource type="Texture2D" uid="uid://bles8tq4umjd3" path="res://assets/botones/Red.png" id="7_msalm"]
+[ext_resource type="AudioStream" uid="uid://2nsi8bwok6gg" path="res://assets/sonidos/005084953_prev.mp3" id="8_41fxa"]
 
 [sub_resource type="Theme" id="Theme_7doie"]
 
@@ -167,6 +168,14 @@ theme_override_fonts/font = ExtResource("6_oqh5d")
 theme_override_font_sizes/font_size = 22
 text = "SALIR"
 
+[node name="Node" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="SoundBotones" type="AudioStreamPlayer" parent="Node"]
+stream = ExtResource("8_41fxa")
+
 [connection signal="pressed" from="PanelMenu/PanelOption/TextureButton1" to="." method="_on_texture_button_1_pressed"]
 [connection signal="pressed" from="PanelMenu/PanelOption/ButtonOption" to="." method="_on_button_option_pressed"]
 [connection signal="pressed" from="PanelMenu/PanelOption/TextureButton3" to="." method="_on_texture_button_3_pressed"]
+[connection signal="finished" from="Node/SoundBotones" to="." method="_on_sound_botones_finished"]

@@ -1,7 +1,7 @@
-Node
-Parallax2D
 Control
 AudioStreamPlayer
+Node
+Parallax2D
 TileMapLayer
 TileMap
 CanvasLayer
@@ -12,4 +12,3 @@ Node2D
 TextureButton
 LineEdit
 TextEdit
-Label
