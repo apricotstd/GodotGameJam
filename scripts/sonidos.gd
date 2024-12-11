@@ -1,7 +1,8 @@
 extends Node
 @onready var audio_player_1 = $AudioStreamPlayer
 @onready var audio_player_2 = $AudioStreamPlayer2
-var buffer_time = 0.1 
+var buffer_time = 0.1
+ 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	audio_player_1.connect("finished", Callable(self, "_on_audio_player_1_finished"))
