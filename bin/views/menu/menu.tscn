@@ -1,10 +1,8 @@
-[gd_scene load_steps=14 format=3 uid="uid://b2yl5r1qt84oi"]
+[gd_scene load_steps=12 format=3 uid="uid://b2yl5r1qt84oi"]
 
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_c8aoe"]
 [ext_resource type="Texture2D" uid="uid://cminpqufnjktk" path="res://assets/sprites/nubes/cielo.png" id="2_8gk4n"]
-[ext_resource type="Texture2D" uid="uid://bppyfq6clj8ao" path="res://assets/botones/marco-menu2.png" id="3_4ywrp"]
-[ext_resource type="Texture2D" uid="uid://eixe3l01jlv1" path="res://assets/fondos/terreno.png" id="3_kai0v"]
-[ext_resource type="Texture2D" uid="uid://bwmdo8p3wh736" path="res://assets/botones/Big_PANEL_SelectionBorder.png" id="4_r83jh"]
+[ext_resource type="Texture2D" uid="uid://cm2v2w6out4dj" path="res://assets/fondos/background/fondo.png" id="3_gfnjy"]
 [ext_resource type="Texture2D" uid="uid://cmbn2s2684x3s" path="res://assets/botones/Cyan.png" id="5_chnsc"]
 [ext_resource type="FontFile" uid="uid://byfergbhqst7h" path="res://assets/fuentes/Librestile/LibrestileExtBoldOblique.ttf" id="6_oqh5d"]
 [ext_resource type="Texture2D" uid="uid://cje6iyjo56laj" path="res://assets/fondos/marco5.png" id="6_vl5wm"]
@@ -43,7 +41,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("3_kai0v")
+texture = ExtResource("3_gfnjy")
 expand_mode = 1
 
 [node name="PanelOption" type="Control" parent="PanelMenu"]
@@ -60,42 +58,6 @@ offset_bottom = 140.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_7doie")
-
-[node name="Marco2" type="TextureRect" parent="PanelMenu/PanelOption"]
-visible = false
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -286.0
-offset_top = -323.5
-offset_right = 298.0
-offset_bottom = 380.5
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("4_r83jh")
-expand_mode = 1
-flip_v = true
-
-[node name="Marco" type="TextureRect" parent="PanelMenu/PanelOption"]
-visible = false
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -334.0
-offset_top = -363.5
-offset_right = 346.0
-offset_bottom = 380.5
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("3_4ywrp")
-expand_mode = 1
-flip_v = true
 
 [node name="Marco3" type="TextureRect" parent="PanelMenu/PanelOption"]
 layout_mode = 1
