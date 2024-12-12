@@ -1,9 +1,9 @@
+Parallax2D
 TextureRect
 Label
 Control
 AudioStreamPlayer
 Node
-Parallax2D
 TileMapLayer
 TileMap
 CanvasLayer
