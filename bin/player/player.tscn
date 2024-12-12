@@ -66,5 +66,5 @@ animation = &"idle"
 frame_progress = 0.172502
 
 [node name="Camera2D" type="Camera2D" parent="."]
-offset = Vector2(700, -350)
+offset = Vector2(700, 0)
 position_smoothing_speed = 5.29
