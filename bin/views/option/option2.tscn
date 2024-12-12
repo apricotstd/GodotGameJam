@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://cbaw5lsgu10xg"]
+[gd_scene load_steps=13 format=3 uid="uid://cbaw5lsgu10xg"]
 
 [ext_resource type="Script" path="res://scripts/option.gd" id="1_1flis"]
 [ext_resource type="Texture2D" uid="uid://cminpqufnjktk" path="res://assets/sprites/nubes/cielo.png" id="2_jw7eh"]
@@ -11,6 +11,7 @@
 [ext_resource type="FontFile" uid="uid://byfergbhqst7h" path="res://assets/fuentes/Librestile/LibrestileExtBoldOblique.ttf" id="6_sn2st"]
 [ext_resource type="Texture2D" uid="uid://dg7foil82w1aj" path="res://assets/botones/boton-1.png" id="7_y0v13"]
 [ext_resource type="Texture2D" uid="uid://ceucmvln8rjlf" path="res://assets/botones/General_Icon_Cancel_Close.png" id="8_qsdl7"]
+[ext_resource type="Texture2D" uid="uid://b5rtyrl8s5f7e" path="res://assets/fondos/REPORT_BG_FieldArea.png" id="11_xqv78"]
 
 [node name="CanvasLayer" type="CanvasLayer"]
 
@@ -51,9 +52,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -516.0
-offset_top = -472.0
+offset_top = -473.0
 offset_right = 516.0
-offset_bottom = 472.0
+offset_bottom = 471.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("4_uipl8")
@@ -249,20 +250,24 @@ texture_normal = ExtResource("4_fsl5y")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="TextEdit" type="TextEdit" parent="Sonido/TextureRect/SoundControl/TextureButtonMusica/TextureButton6"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -42.5
-offset_top = -24.0
-offset_right = 40.5
-offset_bottom = 25.0
-grow_horizontal = 2
-grow_vertical = 2
-metadata/_edit_lock_ = true
+[node name="TextureRect" type="TextureRect" parent="Sonido/TextureRect/SoundControl/TextureButtonMusica/TextureButton6"]
+layout_mode = 0
+offset_left = -3.0
+offset_top = -5.0
+offset_right = 93.0
+offset_bottom = 63.0
+texture = ExtResource("11_xqv78")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Sonido/TextureRect/SoundControl/TextureButtonMusica/TextureButton6"]
+layout_mode = 0
+offset_right = 88.0
+offset_bottom = 58.0
+theme_override_fonts/font = ExtResource("5_pa8wg")
+theme_override_font_sizes/font_size = 25
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="TextureButtonMusica2" type="TextureButton" parent="Sonido/TextureRect/SoundControl"]
 layout_mode = 0
@@ -434,4 +439,6 @@ stretch_mode = 0
 [connection signal="pressed" from="Sonido/TextureRect/ControlButtonPrincipales/TextureButton1" to="Sonido" method="_on_texture_button_1_pressed"]
 [connection signal="pressed" from="Sonido/TextureRect/ControlButtonPrincipales/TextureButton2" to="Sonido" method="_on_texture_button_2_pressed"]
 [connection signal="pressed" from="Sonido/TextureRect/ControlButtonPrincipales/TextureButton3" to="Sonido" method="_on_texture_button_3_pressed"]
+[connection signal="value_changed" from="Sonido/TextureRect/SoundControl/TextureButtonMusica/ControlMusica" to="Sonido" method="_on_control_musica_value_changed"]
+[connection signal="value_changed" from="Sonido/TextureRect/SoundControl/TextureButtonMusica2/ControlMusica" to="Sonido" method="_on_control_musica_value_changed"]
 [connection signal="pressed" from="Sonido/TextureRect/TextureButton" to="Sonido" method="_on_texture_button_pressed"]
