@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://b2yl5r1qt84oi"]
+[gd_scene load_steps=15 format=3 uid="uid://b2yl5r1qt84oi"]
 
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_c8aoe"]
 [ext_resource type="Texture2D" uid="uid://cminpqufnjktk" path="res://assets/sprites/nubes/cielo.png" id="2_8gk4n"]
@@ -12,6 +12,7 @@
 [ext_resource type="AudioStream" uid="uid://2nsi8bwok6gg" path="res://assets/sonidos/005084953_prev.mp3" id="8_41fxa"]
 [ext_resource type="Texture2D" uid="uid://b6jw865kwau2e" path="res://assets/botones/boton-2.png" id="8_mwa5y"]
 [ext_resource type="Texture2D" uid="uid://uvlxiod6ing8" path="res://assets/botones/boton-3.png" id="11_wdpr3"]
+[ext_resource type="AudioStream" uid="uid://cfkr8mce1bicm" path="res://assets/sonidos/MunuPrincipal.mp3" id="12_pgfoj"]
 
 [sub_resource type="Theme" id="Theme_7doie"]
 
@@ -235,6 +236,10 @@ text = "SALIR"
 [node name="Node" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
+
+[node name="MenuPrincipal" type="AudioStreamPlayer" parent="Node"]
+stream = ExtResource("12_pgfoj")
+autoplay = true
 
 [node name="SoundBotones" type="AudioStreamPlayer" parent="Node"]
 stream = ExtResource("8_41fxa")

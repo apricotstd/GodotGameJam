@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://d2trdu3ep3w5g"]
+[gd_scene load_steps=6 format=3 uid="uid://d2trdu3ep3w5g"]
 
 [ext_resource type="Texture2D" uid="uid://dkl7w1a5xje0l" path="res://assets/fondos/tilemaplvl1.png" id="1_dtqmx"]
+[ext_resource type="Texture2D" uid="uid://btc1n7qu7y3ba" path="res://assets/sprites/arboles/tierra.png" id="2_vx1ys"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_686pa"]
 texture = ExtResource("1_dtqmx")
@@ -806,10 +807,95 @@ texture = ExtResource("1_dtqmx")
 35:6/0 = 0
 50:44/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ysd78"]
+texture = ExtResource("2_vx1ys")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+8:1/0 = 0
+8:2/0 = 0
+8:3/0 = 0
+8:4/0 = 0
+8:5/0 = 0
+8:6/0 = 0
+8:7/0 = 0
+8:8/0 = 0
+7:8/0 = 0
+6:8/0 = 0
+6:7/0 = 0
+5:7/0 = 0
+4:7/0 = 0
+3:7/0 = 0
+2:7/0 = 0
+2:8/0 = 0
+1:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+1:7/0 = 0
+0:7/0 = 0
+0:8/0 = 0
+0:6/0 = 0
+0:5/0 = 0
+0:4/0 = 0
+0:3/0 = 0
+1:2/0 = 0
+1:1/0 = 0
+0:1/0 = 0
+0:2/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+7:2/0 = 0
+6:2/0 = 0
+5:2/0 = 0
+4:2/0 = 0
+3:2/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+7:3/0 = 0
+6:3/0 = 0
+5:3/0 = 0
+2:3/0 = 0
+1:3/0 = 0
+2:2/0 = 0
+2:4/0 = 0
+1:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+7:5/0 = 0
+7:6/0 = 0
+6:6/0 = 0
+5:6/0 = 0
+4:6/0 = 0
+3:6/0 = 0
+2:6/0 = 0
+1:6/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:7/0 = 0
+
 [sub_resource type="TileSet" id="TileSet_8jmjq"]
 physics_layer_0/collision_layer = 1
 terrain_set_0/mode = 0
 sources/0 = SubResource("TileSetAtlasSource_686pa")
+sources/1 = SubResource("TileSetAtlasSource_ysd78")
 
 [node name="TileMapLayer" type="TileMapLayer"]
 tile_set = SubResource("TileSet_8jmjq")

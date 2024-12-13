@@ -1,8 +1,9 @@
+AudioStreamPlayer
+GPUParticles2D
 Parallax2D
 TextureRect
 Label
 Control
-AudioStreamPlayer
 Node
 TileMapLayer
 TileMap
@@ -11,4 +12,3 @@ OptionButton
 HSlider
 Node2D
 TextureButton
-LineEdit
