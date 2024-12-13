@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bd3cv42rlgfp7"
-path="res://.godot/imported/fotograma0000.png-0367bf0e68475583d991b3147d4dfd90.ctex"
+uid="uid://bjo48ebvrprj0"
+path="res://.godot/imported/apricot diseño.png-b2adcda380e870f6559d6f436a48c488.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player/idle/fotograma0000.png"
-dest_files=["res://.godot/imported/fotograma0000.png-0367bf0e68475583d991b3147d4dfd90.ctex"]
+source_file="res://assets/logo/apricot diseño.png"
+dest_files=["res://.godot/imported/apricot diseño.png-b2adcda380e870f6559d6f436a48c488.ctex"]
 
 [params]
 

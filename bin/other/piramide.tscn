@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cffxofhfvb623"]
+
+[ext_resource type="Texture2D" uid="uid://c7kbbn8mj0in8" path="res://assets/piramide/piramide.png" id="1_ro7lc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t44s0"]
+size = Vector2(110, 155)
+
+[node name="Piramide" type="Area2D"]
+
+[node name="Col" type="CollisionShape2D" parent="."]
+position = Vector2(162, 135.5)
+shape = SubResource("RectangleShape2D_t44s0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(170, 92.5)
+scale = Vector2(2.13333, 2.10119)
+texture = ExtResource("1_ro7lc")

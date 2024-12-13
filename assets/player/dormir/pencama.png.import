@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bd3cv42rlgfp7"
-path="res://.godot/imported/fotograma0000.png-0367bf0e68475583d991b3147d4dfd90.ctex"
+uid="uid://vfsk66lg7t5d"
+path="res://.godot/imported/pencama.png-59f1129f289121be8524eb7a30d10e35.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player/idle/fotograma0000.png"
-dest_files=["res://.godot/imported/fotograma0000.png-0367bf0e68475583d991b3147d4dfd90.ctex"]
+source_file="res://assets/player/dormir/pencama.png"
+dest_files=["res://.godot/imported/pencama.png-59f1129f289121be8524eb7a30d10e35.ctex"]
 
 [params]
 

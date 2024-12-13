@@ -1,7 +1,7 @@
-[gd_scene load_steps=12 format=3 uid="uid://ugwkjk05qb5u"]
+[gd_scene load_steps=13 format=3 uid="uid://ugwkjk05qb5u"]
 
 [ext_resource type="Script" path="res://bin/player/player.gd" id="1_8j4dm"]
-[ext_resource type="Texture2D" uid="uid://c8rtkhxoond04" path="res://assets/player/idle/fotograma0000.png" id="1_s1bvn"]
+[ext_resource type="Texture2D" uid="uid://bd3cv42rlgfp7" path="res://assets/player/idle/fotograma0000.png" id="1_s1bvn"]
 [ext_resource type="Texture2D" uid="uid://cdtvg5yxbwg71" path="res://assets/player/idle/fotograma0005.png" id="2_nspyy"]
 [ext_resource type="Texture2D" uid="uid://cqfp1r5f6qomo" path="res://assets/player/idle/fotograma0010.png" id="3_elbku"]
 [ext_resource type="Texture2D" uid="uid://bqc3l7oh8gfjk" path="res://assets/player/move/fotograma0000.png" id="4_gggaw"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://cp6a7jv3mdrvj" path="res://assets/player/move/fotograma0006.png" id="6_45vto"]
 [ext_resource type="Texture2D" uid="uid://cruyguae61im8" path="res://assets/player/move/fotograma0009.png" id="7_i4fnk"]
 [ext_resource type="Texture2D" uid="uid://clkvnhm8l58l1" path="res://assets/player/move/fotograma0012.png" id="8_yb6nr"]
+[ext_resource type="PackedScene" uid="uid://ryr2vc4aj4y" path="res://bin/player/game.tscn" id="10_1v346"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_oddt5"]
 radius = 44.0
@@ -48,10 +49,10 @@ animations = [{
 }],
 "loop": true,
 "name": &"move",
-"speed": 14.0
+"speed": 24.0
 }]
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["player"]]
 script = ExtResource("1_8j4dm")
 
 [node name="Col" type="CollisionShape2D" parent="."]
@@ -62,9 +63,10 @@ shape = SubResource("CapsuleShape2D_oddt5")
 position = Vector2(-0.500001, 1.9)
 scale = Vector2(0.2, 0.2)
 sprite_frames = SubResource("SpriteFrames_ggf4s")
-animation = &"idle"
-frame_progress = 0.172502
+animation = &"move"
+frame_progress = 0.129975
 
-[node name="Camera2D" type="Camera2D" parent="."]
-offset = Vector2(700, 0)
+[node name="Camera2D" type="Camera2D" parent="." groups=["player"]]
 position_smoothing_speed = 5.29
+
+[node name="Game" parent="Camera2D" instance=ExtResource("10_1v346")]

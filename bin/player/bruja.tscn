@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://dcfdci87i4pdp"]
+
+[ext_resource type="Texture2D" uid="uid://4kk2gnfdfngy" path="res://assets/bruja/bruja.png" id="1_l1eo2"]
+[ext_resource type="Script" path="res://bin/player/bruja.gd" id="1_oekju"]
+[ext_resource type="AudioStream" uid="uid://doswwjwv7v0ry" path="res://assets/sonidos/ghosts-on-film-185898.mp3" id="3_dn4yj"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_w85vq"]
+radius = 114.0
+height = 594.0
+
+[node name="Bruja" type="Area2D"]
+script = ExtResource("1_oekju")
+
+[node name="bruja" type="Sprite2D" parent="."]
+scale = Vector2(0.482639, 0.43099)
+texture = ExtResource("1_l1eo2")
+
+[node name="Col" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_w85vq")
+
+[node name="sonidp" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_dn4yj")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bd3cv42rlgfp7"
-path="res://.godot/imported/fotograma0000.png-0367bf0e68475583d991b3147d4dfd90.ctex"
+uid="uid://4kk2gnfdfngy"
+path="res://.godot/imported/bruja.png-a1082b38407067fed1e31f719776f5a9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player/idle/fotograma0000.png"
-dest_files=["res://.godot/imported/fotograma0000.png-0367bf0e68475583d991b3147d4dfd90.ctex"]
+source_file="res://assets/bruja/bruja.png"
+dest_files=["res://.godot/imported/bruja.png-a1082b38407067fed1e31f719776f5a9.ctex"]
 
 [params]
 
