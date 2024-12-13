@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bd3cv42rlgfp7"
-path="res://.godot/imported/fotograma0000.png-0367bf0e68475583d991b3147d4dfd90.ctex"
+uid="uid://cxrpoy5y4uy0a"
+path="res://.godot/imported/espejo.png-e4cc98fa68f04ef2223b43c9704f2e54.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player/idle/fotograma0000.png"
-dest_files=["res://.godot/imported/fotograma0000.png-0367bf0e68475583d991b3147d4dfd90.ctex"]
+source_file="res://assets/player/espejo/espejo.png"
+dest_files=["res://.godot/imported/espejo.png-e4cc98fa68f04ef2223b43c9704f2e54.ctex"]
 
 [params]
 
