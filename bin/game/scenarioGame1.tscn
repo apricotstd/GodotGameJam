@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=4 uid="uid://dcycbhwtmx7uo"]
+[gd_scene load_steps=10 format=4 uid="uid://dpkavkayfufwx"]
 
 [ext_resource type="PackedScene" uid="uid://d2trdu3ep3w5g" path="res://bin/tiles/tile_map_layer.tscn" id="1_aua2a"]
 [ext_resource type="Texture2D" uid="uid://dsdtwalj4rb6q" path="res://assets/sprites/nubes/noche.png" id="1_iyqho"]
