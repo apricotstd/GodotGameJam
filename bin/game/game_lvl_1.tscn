@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=4 uid="uid://b0n828cwpxj08"]
+[gd_scene load_steps=29 format=4 uid="uid://b0n828cwpxj08"]
 
 [ext_resource type="Script" path="res://bin/game/game_lvl_1.gd" id="1_xwip0"]
 [ext_resource type="Texture2D" uid="uid://d2eorjlh87nfv" path="res://assets/sprites/nubes/m2.png" id="2_g8bpg"]
@@ -14,10 +14,13 @@
 [ext_resource type="PackedScene" uid="uid://dcfdci87i4pdp" path="res://bin/player/bruja.tscn" id="9_rpnsd"]
 [ext_resource type="Texture2D" uid="uid://bqc3l7oh8gfjk" path="res://assets/player/move/fotograma0000.png" id="11_fue15"]
 [ext_resource type="Texture2D" uid="uid://4kk2gnfdfngy" path="res://assets/bruja/bruja.png" id="11_phpec"]
+[ext_resource type="PackedScene" uid="uid://bhtm8o45feoxc" path="res://bin/other/lluvia.tscn" id="11_sb35w"]
 [ext_resource type="Texture2D" uid="uid://dayxeetx8ywo7" path="res://assets/player/move/fotograma0003.png" id="12_f7pv0"]
 [ext_resource type="Texture2D" uid="uid://cp6a7jv3mdrvj" path="res://assets/player/move/fotograma0006.png" id="13_wuagw"]
 [ext_resource type="Texture2D" uid="uid://cruyguae61im8" path="res://assets/player/move/fotograma0009.png" id="14_7svnm"]
 [ext_resource type="Texture2D" uid="uid://clkvnhm8l58l1" path="res://assets/player/move/fotograma0012.png" id="15_ra815"]
+[ext_resource type="FontFile" uid="uid://oc6h0d3ahcg0" path="res://assets/fuentes/FlyLegs.otf" id="20_7clls"]
+[ext_resource type="Texture2D" uid="uid://npwbbxgi87o5" path="res://assets/bruja/bruja2.png" id="20_v8xpg"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_digrn"]
 radius = 88.3629
@@ -44,6 +47,13 @@ animations = [{
 "name": &"default",
 "speed": 24.0
 }]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k5au8"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="Theme" id="Theme_jtnfp"]
+RichTextLabel/styles/background = SubResource("StyleBoxFlat_k5au8")
+RichTextLabel/styles/focus = null
 
 [sub_resource type="Animation" id="Animation_je776"]
 length = 0.001
@@ -131,10 +141,22 @@ tracks/6/keys = {
 "update": 0,
 "values": [Vector2(0, 0)]
 }
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("bruja:texture")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("11_phpec")]
+}
 
 [sub_resource type="Animation" id="Animation_mx85m"]
 resource_name = "init"
-length = 14.0
+length = 20.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -190,7 +212,7 @@ tracks/4/path = NodePath("bruja:position")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
-"times": PackedFloat32Array(0, 3, 4.83333, 9, 10, 10.0667, 11.0667, 12),
+"times": PackedFloat32Array(0, 3, 4.83333, 9, 16, 16.0667, 17.0667, 18),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
 "values": [Vector2(1512, -408), Vector2(1512, -408), Vector2(720, 16), Vector2(720, 16), Vector2(-832, -256), Vector2(-816, -312), Vector2(720, 16), Vector2(-816, -312)]
@@ -202,7 +224,7 @@ tracks/5/path = NodePath("personaje:position")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
-"times": PackedFloat32Array(0.0333333, 11.9667),
+"times": PackedFloat32Array(0.0333333, 17.9667),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(-117, 264), Vector2(-117, 264)]
@@ -214,7 +236,7 @@ tracks/6/path = NodePath(".")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = {
-"times": PackedFloat32Array(11.9),
+"times": PackedFloat32Array(17.9),
 "transitions": PackedFloat32Array(1),
 "values": [{
 "args": [],
@@ -228,10 +250,36 @@ tracks/7/path = NodePath("Node2D:position")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = {
-"times": PackedFloat32Array(11.9, 14),
+"times": PackedFloat32Array(17.9, 20),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(0, 0), Vector2(1500, 0)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("bruja:texture")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [ExtResource("11_phpec"), ExtResource("20_v8xpg")]
+}
+tracks/9/type = "method"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath(".")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(2.03333),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"iniciarDialog"
+}]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_eoofv"]
@@ -342,6 +390,9 @@ position = Vector2(392, 520)
 position = Vector2(816, 488)
 script = ExtResource("8_h3iar")
 
+[node name="Lluvia" parent="video" instance=ExtResource("11_sb35w")]
+position = Vector2(72, -488)
+
 [node name="Sprite2D" type="Sprite2D" parent="video"]
 visible = false
 modulate = Color(0.991164, 0.991164, 0.991164, 1)
@@ -369,6 +420,36 @@ frame_progress = 0.938001
 position = Vector2(1512, -408)
 scale = Vector2(0.605556, 0.541667)
 texture = ExtResource("11_phpec")
+
+[node name="Node" type="CanvasLayer" parent="video"]
+
+[node name="Control" type="Control" parent="video/Node"]
+layout_mode = 3
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="video/Node/Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 64.0
+offset_top = -128.0
+offset_right = -60.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_jtnfp")
+theme_override_fonts/normal_font = ExtResource("20_7clls")
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[color=green]NIÑA[/color]: OH"
+threaded = true
+visible_characters_behavior = 2
 
 [node name="opcional" type="Camera2D" parent="video"]
 

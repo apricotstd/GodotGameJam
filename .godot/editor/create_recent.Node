@@ -4,6 +4,9 @@ TextureButton
 Timer
 Button
 Label
+LineEdit
+RichTextLabel
+CanvasLayer
 ColorRect
 CanvasLayer
 Node2D

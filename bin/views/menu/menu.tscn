@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://b2yl5r1qt84oi"]
+[gd_scene load_steps=16 format=3 uid="uid://b2yl5r1qt84oi"]
 
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_c8aoe"]
 [ext_resource type="Texture2D" uid="uid://cminpqufnjktk" path="res://assets/sprites/nubes/cielo.png" id="2_8gk4n"]
@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://b6jw865kwau2e" path="res://assets/botones/boton-2.png" id="8_mwa5y"]
 [ext_resource type="FontFile" uid="uid://oc6h0d3ahcg0" path="res://assets/fuentes/FlyLegs.otf" id="9_o45u5"]
 [ext_resource type="Texture2D" uid="uid://uvlxiod6ing8" path="res://assets/botones/boton-3.png" id="11_wdpr3"]
+[ext_resource type="PackedScene" uid="uid://bhtm8o45feoxc" path="res://bin/other/lluvia.tscn" id="12_2xyw4"]
 [ext_resource type="AudioStream" uid="uid://cfkr8mce1bicm" path="res://assets/sonidos/MunuPrincipal.mp3" id="12_pgfoj"]
 
 [sub_resource type="Theme" id="Theme_7doie"]
@@ -238,6 +239,8 @@ theme_override_font_sizes/font_size = 30
 text = "SALIR"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Lluvia" parent="." instance=ExtResource("12_2xyw4")]
 
 [node name="Node" type="Control" parent="."]
 layout_mode = 3

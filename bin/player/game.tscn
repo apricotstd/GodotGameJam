@@ -1027,6 +1027,8 @@ texture_normal = ExtResource("3_30jfn")
 
 [node name="Timer" type="Timer" parent="."]
 
+[node name="Lluvia" parent="." instance=ExtResource("3_m32oj")]
+
 [connection signal="pressed" from="Paused/Continue" to="." method="_on_continue_pressed"]
 [connection signal="pressed" from="Paused/opciones2" to="." method="_on_opciones_2_pressed"]
 [connection signal="pressed" from="Paused/Quitar" to="." method="_on_quitar_pressed"]
