@@ -1,4 +1,4 @@
-extends Control
+extends Node
 
 @onready var audio_player_1 = $AudioStreamPlayer
 @onready var audio_player_2 = $AudioStreamPlayer2
