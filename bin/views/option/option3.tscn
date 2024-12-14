@@ -1,11 +1,12 @@
-[gd_scene load_steps=8 format=3 uid="uid://bi0kbirr63j6k"]
+[gd_scene load_steps=9 format=3 uid="uid://bi0kbirr63j6k"]
 
-[ext_resource type="Texture2D" uid="uid://bcan8ptmo1835" path="res://assets/fondos/menu.png" id="1_5l1tb"]
 [ext_resource type="Script" path="res://scripts/option.gd" id="1_qhxd4"]
-[ext_resource type="Texture2D" uid="uid://eq0mdx325dfm" path="res://assets/fondos/AVATAR_ContainerBox.png" id="3_v45vf"]
-[ext_resource type="Texture2D" uid="uid://cnmetxk0xpoyn" path="res://assets/botones/Big_PANEL_BorderSelected.png" id="4_623w7"]
+[ext_resource type="Texture2D" uid="uid://cminpqufnjktk" path="res://assets/sprites/nubes/cielo.png" id="2_hkst1"]
+[ext_resource type="Texture2D" uid="uid://eixe3l01jlv1" path="res://assets/fondos/terreno.png" id="3_5rgit"]
 [ext_resource type="Texture2D" uid="uid://d003u60x3cgg8" path="res://assets/botones/Big_PANEL_Border.png" id="4_frq3l"]
-[ext_resource type="FontFile" uid="uid://ft5x8rpjmnhf" path="res://assets/fuentes/fonts/otf/G8321-Bold.otf" id="4_rk0sb"]
+[ext_resource type="Texture2D" uid="uid://s4hjdinjkg2b" path="res://assets/botones/marco6.png" id="4_wc5gu"]
+[ext_resource type="Texture2D" uid="uid://dg7foil82w1aj" path="res://assets/botones/boton-1.png" id="5_bqs35"]
+[ext_resource type="Texture2D" uid="uid://b6jw865kwau2e" path="res://assets/botones/boton-2.png" id="6_ke0or"]
 [ext_resource type="Texture2D" uid="uid://ceucmvln8rjlf" path="res://assets/botones/General_Icon_Cancel_Close.png" id="8_c4pf3"]
 
 [node name="OptionMenu3" type="CanvasLayer"]
@@ -19,90 +20,218 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_qhxd4")
 
-[node name="TextureRect" type="TextureRect" parent="Lenguaje"]
+[node name="Background" type="TextureRect" parent="Lenguaje"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_5l1tb")
-
-[node name="ControlPanelOption" type="Control" parent="Lenguaje"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="TextureRectcapa1" type="TextureRect" parent="Lenguaje/ControlPanelOption"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("3_v45vf")
+texture = ExtResource("2_hkst1")
 expand_mode = 1
 
-[node name="TextureRectcapa2" type="TextureRect" parent="Lenguaje/ControlPanelOption"]
+[node name="Background2" type="TextureRect" parent="Lenguaje"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_5rgit")
+expand_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="Lenguaje"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -838.0
-offset_top = -460.0
-offset_right = 842.0
-offset_bottom = 460.0
+offset_left = -516.0
+offset_top = -472.0
+offset_right = 516.0
+offset_bottom = 472.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("3_v45vf")
+texture = ExtResource("4_wc5gu")
+expand_mode = 1
 
-[node name="TextureButton" type="TextureButton" parent="Lenguaje/ControlPanelOption/TextureRectcapa2"]
+[node name="ControlButtonPrincipales" type="Control" parent="Lenguaje/TextureRect"]
 layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -136.0
-offset_top = 9.0
-offset_right = -35.0
-offset_bottom = 103.0
-grow_horizontal = 0
-texture_normal = ExtResource("8_c4pf3")
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -430.0
+offset_top = 146.0
+offset_right = 426.0
+offset_bottom = 241.0
+grow_horizontal = 2
+
+[node name="TextureButton1" type="TextureButton" parent="Lenguaje/TextureRect/ControlButtonPrincipales"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -124.0
+offset_top = -47.5
+offset_right = 124.0
+offset_bottom = 47.5
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("5_bqs35")
+texture_pressed = ExtResource("6_ke0or")
+texture_hover = ExtResource("6_ke0or")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="ControlLenguaje" type="Control" parent="Lenguaje/ControlPanelOption"]
+[node name="Label2" type="Label" parent="Lenguaje/TextureRect/ControlButtonPrincipales/TextureButton1"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -172.0
-offset_top = -20.0
-offset_right = 172.0
-offset_bottom = 20.0
+offset_left = -59.0
+offset_top = -14.5
+offset_right = 55.0
+offset_bottom = 8.5
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_colors/font_color = Color(0.674768, 0.811164, 0.289357, 1)
+theme_override_colors/font_shadow_color = Color(0.0358673, 0.110612, 0.0470687, 1)
+theme_override_colors/font_outline_color = Color(0.242738, 0.506672, 0.499439, 1)
+theme_override_font_sizes/font_size = 24
+text = "CONTROLES"
 
-[node name="Lenguaje" type="OptionButton" parent="Lenguaje/ControlPanelOption/ControlLenguaje"]
+[node name="TextureButton2" type="TextureButton" parent="Lenguaje/TextureRect/ControlButtonPrincipales"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 4.0
+offset_top = -47.5
+offset_right = 268.0
+offset_bottom = 47.5
+grow_vertical = 2
+texture_normal = ExtResource("6_ke0or")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label2" type="Label" parent="Lenguaje/TextureRect/ControlButtonPrincipales/TextureButton2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -59.0
+offset_top = -14.5
+offset_right = 55.0
+offset_bottom = 8.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.674768, 0.811164, 0.289357, 1)
+theme_override_colors/font_shadow_color = Color(0.0358673, 0.110612, 0.0470687, 1)
+theme_override_colors/font_outline_color = Color(0.242738, 0.506672, 0.499439, 1)
+theme_override_font_sizes/font_size = 24
+text = "SONIDO"
+
+[node name="TextureButton3" type="TextureButton" parent="Lenguaje/TextureRect/ControlButtonPrincipales"]
 layout_mode = 1
 anchors_preset = 6
 anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -212.0
-offset_top = -68.0
-offset_right = 206.0
-offset_bottom = 16.0
+offset_left = -256.0
+offset_top = -47.5
+offset_bottom = 47.5
 grow_horizontal = 0
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("4_rk0sb")
+texture_normal = ExtResource("5_bqs35")
+texture_pressed = ExtResource("6_ke0or")
+texture_hover = ExtResource("6_ke0or")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label2" type="Label" parent="Lenguaje/TextureRect/ControlButtonPrincipales/TextureButton3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -59.0
+offset_top = -14.5
+offset_right = 55.0
+offset_bottom = 8.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.674768, 0.811164, 0.289357, 1)
+theme_override_colors/font_shadow_color = Color(0.0358673, 0.110612, 0.0470687, 1)
+theme_override_colors/font_outline_color = Color(0.242738, 0.506672, 0.499439, 1)
+theme_override_font_sizes/font_size = 24
+text = "LENGUAJE"
+
+[node name="ControlLenguaje" type="Control" parent="Lenguaje/TextureRect/ControlButtonPrincipales"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -303.0
+offset_top = 174.5
+offset_right = 307.0
+offset_bottom = 382.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureButton1" type="TextureButton" parent="Lenguaje/TextureRect/ControlButtonPrincipales/ControlLenguaje"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -40.0
+offset_right = 186.0
+offset_bottom = 40.0
+grow_vertical = 2
+texture_normal = ExtResource("4_frq3l")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Lenguaje/TextureRect/ControlButtonPrincipales/ControlLenguaje/TextureButton1"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "Lenguaje
+"
+
+[node name="Lenguaje" type="OptionButton" parent="Lenguaje/TextureRect/ControlButtonPrincipales/ControlLenguaje"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -418.0
+offset_top = -42.0
+offset_bottom = 42.0
+grow_horizontal = 0
+grow_vertical = 2
 theme_override_font_sizes/font_size = 20
 selected = 0
 item_count = 2
@@ -110,212 +239,103 @@ popup/item_0/text = "Español"
 popup/item_1/text = "Ingles"
 popup/item_1/id = 1
 
-[node name="TextureButton1" type="TextureButton" parent="Lenguaje/ControlPanelOption/ControlLenguaje"]
+[node name="ControlButton" type="Control" parent="Lenguaje/TextureRect"]
 layout_mode = 1
-anchors_preset = 4
-anchor_top = 0.5
-anchor_bottom = 0.5
-offset_left = -58.0
-offset_top = -68.0
-offset_right = 128.0
-offset_bottom = 12.0
-grow_vertical = 2
-texture_normal = ExtResource("4_frq3l")
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="Label" type="Label" parent="Lenguaje/ControlPanelOption/ControlLenguaje/TextureButton1"]
-layout_mode = 1
-anchors_preset = 8
+anchors_preset = 7
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 1.0
 anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -11.5
-offset_right = 20.0
-offset_bottom = 11.5
+anchor_bottom = 1.0
+offset_left = -174.0
+offset_top = -148.0
+offset_right = 162.0
+offset_bottom = -70.0
 grow_horizontal = 2
-grow_vertical = 2
-theme_override_fonts/font = ExtResource("4_rk0sb")
-theme_override_font_sizes/font_size = 20
-text = "Lenguaje
-"
+grow_vertical = 0
 
-[node name="ControlButtonPrincipales" type="Control" parent="Lenguaje/ControlPanelOption"]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -615.0
-offset_top = 185.0
-offset_right = 616.0
-offset_bottom = 280.0
-grow_horizontal = 2
-
-[node name="TextureButton1" type="TextureButton" parent="Lenguaje/ControlPanelOption/ControlButtonPrincipales"]
-layout_mode = 0
-offset_left = 74.0
-offset_right = 282.0
-offset_bottom = 95.0
-texture_normal = ExtResource("4_frq3l")
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="Label" type="Label" parent="Lenguaje/ControlPanelOption/ControlButtonPrincipales/TextureButton1"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -11.5
-offset_right = 20.0
-offset_bottom = 11.5
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_fonts/font = ExtResource("4_rk0sb")
-theme_override_font_sizes/font_size = 25
-text = "CONTROLES"
-
-[node name="TextureButton2" type="TextureButton" parent="Lenguaje/ControlPanelOption/ControlButtonPrincipales"]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -124.0
-offset_right = 100.0
-offset_bottom = 95.0
-grow_horizontal = 2
-texture_normal = ExtResource("4_frq3l")
-texture_pressed = ExtResource("4_623w7")
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="Label" type="Label" parent="Lenguaje/ControlPanelOption/ControlButtonPrincipales/TextureButton2"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -11.5
-offset_right = 20.0
-offset_bottom = 11.5
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_fonts/font = ExtResource("4_rk0sb")
-theme_override_font_sizes/font_size = 25
-text = "SONIDO"
-
-[node name="TextureButton3" type="TextureButton" parent="Lenguaje/ControlPanelOption/ControlButtonPrincipales"]
-layout_mode = 0
-offset_left = 950.0
-offset_right = 1158.0
-offset_bottom = 95.0
-texture_normal = ExtResource("4_623w7")
-texture_pressed = ExtResource("4_frq3l")
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="Label" type="Label" parent="Lenguaje/ControlPanelOption/ControlButtonPrincipales/TextureButton3"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -11.5
-offset_right = 20.0
-offset_bottom = 11.5
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_fonts/font = ExtResource("4_rk0sb")
-theme_override_font_sizes/font_size = 25
-text = "LENGUAJE"
-
-[node name="ControlButton" type="Control" parent="Lenguaje"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -128.0
-offset_top = 271.0
-offset_right = 128.0
-offset_bottom = 311.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="TextureButton5" type="TextureButton" parent="Lenguaje/ControlButton"]
+[node name="TextureButton5" type="TextureButton" parent="Lenguaje/TextureRect/ControlButton"]
 layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_left = -22.0
-offset_top = -75.0
-offset_right = 125.0
-offset_bottom = 5.0
+offset_top = -80.0
+offset_right = 168.0
 grow_vertical = 0
-texture_normal = ExtResource("3_v45vf")
-texture_pressed = ExtResource("4_623w7")
+texture_normal = ExtResource("5_bqs35")
+texture_pressed = ExtResource("6_ke0or")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="Label" type="Label" parent="Lenguaje/ControlButton/TextureButton5"]
+[node name="Label2" type="Label" parent="Lenguaje/TextureRect/ControlButton/TextureButton5"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -11.5
-offset_right = 20.0
-offset_bottom = 11.5
+offset_left = -59.0
+offset_top = -14.5
+offset_right = 55.0
+offset_bottom = 8.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("4_rk0sb")
-theme_override_font_sizes/font_size = 20
+theme_override_colors/font_color = Color(0.674768, 0.811164, 0.289357, 1)
+theme_override_colors/font_shadow_color = Color(0.0358673, 0.110612, 0.0470687, 1)
+theme_override_colors/font_outline_color = Color(0.242738, 0.506672, 0.499439, 1)
+theme_override_font_sizes/font_size = 24
 text = "Guardar"
 
-[node name="TextureButton6" type="TextureButton" parent="Lenguaje/ControlButton"]
+[node name="TextureButton6" type="TextureButton" parent="Lenguaje/TextureRect/ControlButton"]
 layout_mode = 1
-anchors_preset = 2
+anchors_preset = 3
+anchor_left = 1.0
 anchor_top = 1.0
+anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 137.0
-offset_top = -75.0
-offset_right = 284.0
-offset_bottom = 5.0
+offset_left = -160.0
+offset_top = -80.0
+offset_bottom = 2.0
+grow_horizontal = 0
 grow_vertical = 0
-texture_normal = ExtResource("3_v45vf")
-texture_pressed = ExtResource("4_623w7")
+texture_normal = ExtResource("5_bqs35")
+texture_pressed = ExtResource("6_ke0or")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="Label" type="Label" parent="Lenguaje/ControlButton/TextureButton6"]
+[node name="Label2" type="Label" parent="Lenguaje/TextureRect/ControlButton/TextureButton6"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -11.5
-offset_right = 20.0
-offset_bottom = 11.5
+offset_left = -53.0
+offset_top = -16.5
+offset_right = 61.0
+offset_bottom = 8.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("4_rk0sb")
-theme_override_font_sizes/font_size = 20
+theme_override_colors/font_color = Color(0.674768, 0.811164, 0.289357, 1)
+theme_override_colors/font_shadow_color = Color(0.0358673, 0.110612, 0.0470687, 1)
+theme_override_colors/font_outline_color = Color(0.242738, 0.506672, 0.499439, 1)
+theme_override_font_sizes/font_size = 24
 text = "Reset"
 
-[connection signal="pressed" from="Lenguaje/ControlPanelOption/TextureRectcapa2/TextureButton" to="Lenguaje" method="_on_texture_button_pressed"]
-[connection signal="pressed" from="Lenguaje/ControlPanelOption/ControlButtonPrincipales/TextureButton1" to="Lenguaje" method="_on_texture_button_1_pressed"]
-[connection signal="pressed" from="Lenguaje/ControlPanelOption/ControlButtonPrincipales/TextureButton2" to="Lenguaje" method="_on_texture_button_2_pressed"]
-[connection signal="pressed" from="Lenguaje/ControlPanelOption/ControlButtonPrincipales/TextureButton3" to="Lenguaje" method="_on_texture_button_3_pressed"]
+[node name="TextureButton" type="TextureButton" parent="Lenguaje/TextureRect"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -130.0
+offset_top = 12.0
+offset_right = -29.0
+offset_bottom = 106.0
+grow_horizontal = 0
+texture_normal = ExtResource("8_c4pf3")
+ignore_texture_size = true
+stretch_mode = 0
+
+[connection signal="pressed" from="Lenguaje/TextureRect/ControlButtonPrincipales/TextureButton1" to="Lenguaje" method="_on_texture_button_1_pressed"]
+[connection signal="pressed" from="Lenguaje/TextureRect/ControlButtonPrincipales/TextureButton2" to="Lenguaje" method="_on_texture_button_2_pressed"]
+[connection signal="pressed" from="Lenguaje/TextureRect/ControlButtonPrincipales/TextureButton3" to="Lenguaje" method="_on_texture_button_3_pressed"]
+[connection signal="pressed" from="Lenguaje/TextureRect/TextureButton" to="Lenguaje" method="_on_texture_button_pressed"]

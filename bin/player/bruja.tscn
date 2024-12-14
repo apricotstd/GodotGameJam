@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3 uid="uid://dcfdci87i4pdp"]
+
+[ext_resource type="Texture2D" uid="uid://4kk2gnfdfngy" path="res://assets/bruja/bruja.png" id="1_l1eo2"]
+[ext_resource type="Script" path="res://bin/player/bruja.gd" id="1_oekju"]
+[ext_resource type="AudioStream" uid="uid://doswwjwv7v0ry" path="res://assets/sonidos/ghosts-on-film-185898.mp3" id="3_dn4yj"]
+[ext_resource type="FontFile" uid="uid://oc6h0d3ahcg0" path="res://assets/fuentes/FlyLegs.otf" id="4_1co1w"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_w85vq"]
+radius = 114.0
+height = 594.0
+
+[node name="Bruja" type="Area2D"]
+script = ExtResource("1_oekju")
+
+[node name="bruja" type="Sprite2D" parent="."]
+scale = Vector2(0.482639, 0.43099)
+texture = ExtResource("1_l1eo2")
+
+[node name="Col" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_w85vq")
+
+[node name="sonidp" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_dn4yj")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 151.0
+offset_top = -54.0
+offset_right = 335.0
+offset_bottom = 56.0
+theme_override_fonts/font = ExtResource("4_1co1w")
+theme_override_font_sizes/font_size = 30
+text = "Estoy cerca de ti niña"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="visible" type="VisibleOnScreenNotifier2D" parent="."]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="screen_entered" from="visible" to="." method="_on_visible_screen_entered"]
+[connection signal="screen_exited" from="visible" to="." method="_on_visible_screen_exited"]
