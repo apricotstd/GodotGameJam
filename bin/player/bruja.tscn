@@ -1,12 +1,12 @@
 [gd_scene load_steps=6 format=3 uid="uid://dcfdci87i4pdp"]
 
-[ext_resource type="Texture2D" uid="uid://4kk2gnfdfngy" path="res://assets/bruja/bruja.png" id="1_l1eo2"]
 [ext_resource type="Script" path="res://bin/player/bruja.gd" id="1_oekju"]
+[ext_resource type="Texture2D" uid="uid://dttt2jqkaolgd" path="res://assets/bruja/brujalado.png" id="2_6io7w"]
 [ext_resource type="AudioStream" uid="uid://doswwjwv7v0ry" path="res://assets/sonidos/ghosts-on-film-185898.mp3" id="3_dn4yj"]
 [ext_resource type="FontFile" uid="uid://oc6h0d3ahcg0" path="res://assets/fuentes/FlyLegs.otf" id="4_1co1w"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_w85vq"]
-radius = 242.0
+radius = 158.0
 height = 646.0
 
 [node name="Bruja" type="CharacterBody2D"]
@@ -19,7 +19,7 @@ shape = SubResource("CapsuleShape2D_w85vq")
 
 [node name="bruja" type="Sprite2D" parent="."]
 scale = Vector2(0.482639, 0.43099)
-texture = ExtResource("1_l1eo2")
+texture = ExtResource("2_6io7w")
 
 [node name="Col" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_w85vq")

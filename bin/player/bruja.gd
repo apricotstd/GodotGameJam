@@ -22,6 +22,12 @@ func _process(delta: float) -> void:
 		var direction = (Gl.player.global_position - global_position).normalized()
 		velocity = direction * speed
 		velocity.y = 0
+		if velocity.x < 0:
+			$bruja.flip_h = true
+			$Label.position = Vector2(-300, -54)
+		elif velocity.x > 0:
+			$bruja.flip_h = false
+			$Label.position = Vector2(200, -54)
 		move_and_slide()
 	pass
 
