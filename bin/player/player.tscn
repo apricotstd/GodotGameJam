@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://ugwkjk05qb5u"]
+[gd_scene load_steps=16 format=3 uid="uid://ugwkjk05qb5u"]
 
 [ext_resource type="Script" path="res://bin/player/player.gd" id="1_8j4dm"]
 [ext_resource type="Texture2D" uid="uid://c8rtkhxoond04" path="res://assets/player/idle/fotograma0000.png" id="1_s1bvn"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://ryr2vc4aj4y" path="res://bin/player/game.tscn" id="10_1v346"]
 [ext_resource type="Texture2D" uid="uid://b8sqbphn72n04" path="res://assets/player/subir/subir.png" id="10_pa1u6"]
 [ext_resource type="Texture2D" uid="uid://6vnnda8keetw" path="res://assets/player/subir/subir2.png" id="11_smklu"]
+[ext_resource type="FontFile" uid="uid://oc6h0d3ahcg0" path="res://assets/fuentes/FlyLegs.otf" id="13_kufc6"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_oddt5"]
 radius = 44.0
@@ -76,10 +77,22 @@ shape = SubResource("CapsuleShape2D_oddt5")
 position = Vector2(-0.500001, 1.9)
 scale = Vector2(0.2, 0.2)
 sprite_frames = SubResource("SpriteFrames_ggf4s")
-animation = &"subir"
-frame_progress = 0.560715
+animation = &"idle"
 
 [node name="Camera2D" type="Camera2D" parent="." groups=["player"]]
 position_smoothing_speed = 5.29
 
 [node name="Game" parent="Camera2D" instance=ExtResource("10_1v346")]
+
+[node name="Label" type="Label" parent="."]
+visible = false
+offset_left = -117.0
+offset_top = -254.0
+offset_right = 106.0
+offset_bottom = -136.0
+theme_override_fonts/font = ExtResource("13_kufc6")
+theme_override_font_sizes/font_size = 20
+text = "\"X\" 
+para subir"
+horizontal_alignment = 1
+vertical_alignment = 1

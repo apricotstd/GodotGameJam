@@ -38,3 +38,13 @@ func _physics_process(delta: float) -> void:
 func dead():
 	$Camera2D/Game.dead()
 	pass
+
+func showX(txt):
+	$Label.text = txt
+	$Label.show()
+	pass
+
+func hideX():
+	$Label.text = ""
+	$Label.hide()
+	pass

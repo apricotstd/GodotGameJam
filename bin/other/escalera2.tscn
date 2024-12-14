@@ -1,26 +1,36 @@
-[gd_scene load_steps=5 format=3 uid="uid://dk42spwp1lrl3"]
+[gd_scene load_steps=5 format=3 uid="uid://cequ3akkrk0fj"]
 
-[ext_resource type="Texture2D" uid="uid://cdxwjcxnnutl5" path="res://assets/fondos/background/Escalerita.png" id="1_rmgsb"]
-[ext_resource type="Script" path="res://bin/other/escalera.gd" id="2_ounio"]
-[ext_resource type="Texture2D" uid="uid://dom31a5js53hh" path="res://assets/Area-Escalera.png" id="3_yodaw"]
+[ext_resource type="Texture2D" uid="uid://cdxwjcxnnutl5" path="res://assets/fondos/background/Escalerita.png" id="1_6suoa"]
+[ext_resource type="Script" path="res://bin/other/escalera.gd" id="2_fmptg"]
+[ext_resource type="Texture2D" uid="uid://dom31a5js53hh" path="res://assets/Area-Escalera.png" id="3_4m6x8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hekmc"]
 size = Vector2(66, 105)
 
 [node name="Sprite2D" type="Sprite2D"]
 modulate = Color(1, 1, 1, 0.290196)
-texture = ExtResource("1_rmgsb")
-script = ExtResource("2_ounio")
+texture = ExtResource("1_6suoa")
+script = ExtResource("2_fmptg")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(13.5, -272)
 scale = Vector2(0.0428366, 0.0542207)
-texture = ExtResource("3_yodaw")
+texture = ExtResource("3_4m6x8")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 position = Vector2(13, -524)
 scale = Vector2(0.0428366, 0.0542207)
-texture = ExtResource("3_yodaw")
+texture = ExtResource("3_4m6x8")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(12, -825)
+scale = Vector2(0.0428366, 0.0542207)
+texture = ExtResource("3_4m6x8")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(12, -1124)
+scale = Vector2(0.0428366, 0.0542207)
+texture = ExtResource("3_4m6x8")
 
 [node name="subir" type="Area2D" parent="." groups=["escalera"]]
 
@@ -29,7 +39,7 @@ position = Vector2(1, 134.5)
 shape = SubResource("RectangleShape2D_hekmc")
 
 [node name="Bajar" type="Area2D" parent="." groups=["escalera"]]
-position = Vector2(-1, -508)
+position = Vector2(1, -1112)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bajar"]
 position = Vector2(-2, -209)
