@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://cbaw5lsgu10xg"]
+[gd_scene load_steps=11 format=3 uid="uid://cbaw5lsgu10xg"]
 
 [ext_resource type="Script" path="res://scripts/option.gd" id="1_1flis"]
 [ext_resource type="Texture2D" uid="uid://cminpqufnjktk" path="res://assets/sprites/nubes/cielo.png" id="2_jw7eh"]
@@ -7,8 +7,6 @@
 [ext_resource type="Texture2D" uid="uid://cnmetxk0xpoyn" path="res://assets/botones/Big_PANEL_BorderSelected.png" id="4_fsl5y"]
 [ext_resource type="Texture2D" uid="uid://s4hjdinjkg2b" path="res://assets/botones/marco6.png" id="4_uipl8"]
 [ext_resource type="Texture2D" uid="uid://b6jw865kwau2e" path="res://assets/botones/boton-2.png" id="5_43oju"]
-[ext_resource type="FontFile" uid="uid://ft5x8rpjmnhf" path="res://assets/fuentes/fonts/otf/G8321-Bold.otf" id="5_pa8wg"]
-[ext_resource type="FontFile" uid="uid://byfergbhqst7h" path="res://assets/fuentes/Librestile/LibrestileExtBoldOblique.ttf" id="6_sn2st"]
 [ext_resource type="Texture2D" uid="uid://dg7foil82w1aj" path="res://assets/botones/boton-1.png" id="7_y0v13"]
 [ext_resource type="Texture2D" uid="uid://ceucmvln8rjlf" path="res://assets/botones/General_Icon_Cancel_Close.png" id="8_qsdl7"]
 [ext_resource type="Texture2D" uid="uid://b5rtyrl8s5f7e" path="res://assets/fondos/REPORT_BG_FieldArea.png" id="11_xqv78"]
@@ -106,7 +104,6 @@ grow_vertical = 2
 theme_override_colors/font_color = Color(0.674768, 0.811164, 0.289357, 1)
 theme_override_colors/font_shadow_color = Color(0.0358673, 0.110612, 0.0470687, 1)
 theme_override_colors/font_outline_color = Color(0.242738, 0.506672, 0.499439, 1)
-theme_override_fonts/font = ExtResource("6_sn2st")
 theme_override_font_sizes/font_size = 24
 text = "CONTROLES"
 
@@ -140,7 +137,6 @@ grow_vertical = 2
 theme_override_colors/font_color = Color(0.674768, 0.811164, 0.289357, 1)
 theme_override_colors/font_shadow_color = Color(0.0358673, 0.110612, 0.0470687, 1)
 theme_override_colors/font_outline_color = Color(0.242738, 0.506672, 0.499439, 1)
-theme_override_fonts/font = ExtResource("6_sn2st")
 theme_override_font_sizes/font_size = 24
 text = "SONIDO"
 
@@ -178,7 +174,6 @@ grow_vertical = 2
 theme_override_colors/font_color = Color(0.674768, 0.811164, 0.289357, 1)
 theme_override_colors/font_shadow_color = Color(0.0358673, 0.110612, 0.0470687, 1)
 theme_override_colors/font_outline_color = Color(0.242738, 0.506672, 0.499439, 1)
-theme_override_fonts/font = ExtResource("6_sn2st")
 theme_override_font_sizes/font_size = 24
 text = "LENGUAJE"
 
@@ -219,7 +214,6 @@ offset_right = 51.0
 offset_bottom = 6.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("5_pa8wg")
 theme_override_font_sizes/font_size = 20
 text = "Musica"
 horizontal_alignment = 1
@@ -263,7 +257,6 @@ expand_mode = 1
 layout_mode = 0
 offset_right = 88.0
 offset_bottom = 58.0
-theme_override_fonts/font = ExtResource("5_pa8wg")
 theme_override_font_sizes/font_size = 25
 text = "0"
 horizontal_alignment = 1
@@ -292,7 +285,6 @@ offset_right = 51.0
 offset_bottom = 6.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("5_pa8wg")
 theme_override_font_sizes/font_size = 20
 text = "Sonido"
 horizontal_alignment = 1
@@ -381,7 +373,6 @@ grow_vertical = 2
 theme_override_colors/font_color = Color(0.674768, 0.811164, 0.289357, 1)
 theme_override_colors/font_shadow_color = Color(0.0358673, 0.110612, 0.0470687, 1)
 theme_override_colors/font_outline_color = Color(0.242738, 0.506672, 0.499439, 1)
-theme_override_fonts/font = ExtResource("6_sn2st")
 theme_override_font_sizes/font_size = 24
 text = "Guardar"
 
@@ -418,7 +409,6 @@ grow_vertical = 2
 theme_override_colors/font_color = Color(0.674768, 0.811164, 0.289357, 1)
 theme_override_colors/font_shadow_color = Color(0.0358673, 0.110612, 0.0470687, 1)
 theme_override_colors/font_outline_color = Color(0.242738, 0.506672, 0.499439, 1)
-theme_override_fonts/font = ExtResource("6_sn2st")
 theme_override_font_sizes/font_size = 24
 text = "Reset"
 

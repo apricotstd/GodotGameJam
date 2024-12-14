@@ -48,3 +48,46 @@ func _on_continue_pressed() -> void:
 	get_tree().paused = false
 	$Paused.hide()
 	pass # Replace with function body.
+
+
+func _on_opciones_2_pressed() -> void:
+	$Paused.hide()
+	get_tree().paused = true
+	$Opciones.show()
+	pass # Replace with function body.
+
+
+func _on_return_pressed() -> void:
+	$Opciones.hide()
+	get_tree().paused = true
+	$Paused.show()
+	pass # Replace with function body.
+
+
+func _on_texture_button_2_pressed() -> void:
+	$Opciones/Control_opciones/KeysControl.hide()
+	$Opciones/Control_opciones/SoundButton.show()
+	$Opciones/Control_opciones/LenguajeButton.hide()
+	pass # Replace with function body.
+
+func _on_button_control_pressed() -> void:
+	$Opciones/Control_opciones/Configuraciones/KeysButton.show()
+	$Opciones/Control_opciones/Configuraciones/SoundControl.hide()
+	$Opciones/Control_opciones/Configuraciones/ControlLenguaje.hide()
+	pass # Replace with function body.
+
+
+func _on_button_sonido_pressed() -> void:
+	$Opciones/Control_opciones/Configuraciones/KeysButton.hide()
+	$Opciones/Control_opciones/Configuraciones/SoundControl.show()
+	$Opciones/Control_opciones/Configuraciones/ControlLenguaje.hide()
+	
+	
+	pass # Replace with function body.
+
+
+func _on_button_lenguaje_pressed() -> void:
+	$Opciones/Control_opciones/Configuraciones/KeysButton.hide()
+	$Opciones/Control_opciones/Configuraciones/SoundControl.hide()
+	$Opciones/Control_opciones/Configuraciones/ControlLenguaje.show()
+	pass # Replace with function body.

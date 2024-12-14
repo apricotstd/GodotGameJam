@@ -1,7 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://ryr2vc4aj4y"]
+[gd_scene load_steps=13 format=3 uid="uid://ryr2vc4aj4y"]
 
 [ext_resource type="Script" path="res://bin/player/game.gd" id="1_ydbv1"]
 [ext_resource type="FontFile" uid="uid://oc6h0d3ahcg0" path="res://assets/fuentes/FlyLegs.otf" id="2_mdp4v"]
+[ext_resource type="Texture2D" uid="uid://s4hjdinjkg2b" path="res://assets/botones/marco6.png" id="3_6r3ab"]
+[ext_resource type="Texture2D" uid="uid://ceucmvln8rjlf" path="res://assets/botones/General_Icon_Cancel_Close.png" id="3_30jfn"]
+[ext_resource type="Script" path="res://scripts/option.gd" id="3_olrfy"]
+[ext_resource type="Texture2D" uid="uid://b6jw865kwau2e" path="res://assets/botones/boton-2.png" id="4_1xljc"]
+[ext_resource type="Texture2D" uid="uid://dg7foil82w1aj" path="res://assets/botones/boton-1.png" id="5_j4v5g"]
+[ext_resource type="Texture2D" uid="uid://eq0mdx325dfm" path="res://assets/fondos/AVATAR_ContainerBox.png" id="6_djpyw"]
+[ext_resource type="Texture2D" uid="uid://cnmetxk0xpoyn" path="res://assets/botones/Big_PANEL_BorderSelected.png" id="7_2sycu"]
+[ext_resource type="Texture2D" uid="uid://f6neo66smnos" path="res://assets/botones/Icon_DivisorLine_Horizontal2.png" id="8_nmpr2"]
+[ext_resource type="Texture2D" uid="uid://b5rtyrl8s5f7e" path="res://assets/fondos/REPORT_BG_FieldArea.png" id="9_5xwkm"]
+[ext_resource type="Texture2D" uid="uid://d003u60x3cgg8" path="res://assets/botones/Big_PANEL_Border.png" id="10_jadbi"]
 
 [node name="Game" type="CanvasLayer"]
 script = ExtResource("1_ydbv1")
@@ -106,6 +116,25 @@ theme_override_fonts/font = ExtResource("2_mdp4v")
 theme_override_font_sizes/font_size = 20
 text = "Continue"
 
+[node name="opciones2" type="Button" parent="Paused"]
+process_mode = 3
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -94.0
+offset_top = 106.0
+offset_right = 96.0
+offset_bottom = 177.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_mdp4v")
+theme_override_font_sizes/font_size = 20
+text = "Opciones
+"
+
 [node name="Quitar" type="Button" parent="Paused"]
 process_mode = 3
 layout_mode = 1
@@ -115,17 +144,895 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -94.0
-offset_top = 116.0
+offset_top = 210.0
 offset_right = 96.0
-offset_bottom = 187.0
+offset_bottom = 281.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_mdp4v")
 theme_override_font_sizes/font_size = 20
 text = "Quitar"
 
+[node name="Opciones" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("3_olrfy")
+
+[node name="Color" type="ColorRect" parent="Opciones"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.350386, 0.432266, 0.8994, 0.45098)
+
+[node name="Control_opciones" type="Control" parent="Opciones"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -726.0
+offset_top = -476.0
+offset_right = 738.0
+offset_bottom = 452.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="Opciones/Control_opciones"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -488.0
+offset_top = -446.5
+offset_right = 488.0
+offset_bottom = 446.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_6r3ab")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Opciones/Control_opciones/TextureRect"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -157.0
+offset_top = 79.0
+offset_right = 129.0
+offset_bottom = 146.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_mdp4v")
+theme_override_font_sizes/font_size = 70
+text = "opciones"
+
+[node name="Configuraciones" type="Control" parent="Opciones/Control_opciones"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -400.0
+offset_top = -144.0
+offset_right = 400.0
+offset_bottom = 376.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="KeysButton" type="Control" parent="Opciones/Control_opciones/Configuraciones"]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -380.0
+offset_top = -313.5
+offset_right = 369.0
+offset_bottom = 134.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureButtonUp" type="TextureButton" parent="Opciones/Control_opciones/Configuraciones/KeysButton"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -288.5
+offset_top = 35.0
+offset_right = -126.5
+offset_bottom = 107.0
+grow_horizontal = 2
+texture_normal = ExtResource("6_djpyw")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label2" type="Label" parent="Opciones/Control_opciones/Configuraciones/KeysButton/TextureButtonUp"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.513
+anchor_bottom = 0.5
+offset_left = -66.0
+offset_top = -19.0
+offset_right = 57.972
+offset_bottom = 14.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "Arriba"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="TextureButton5" type="TextureButton" parent="Opciones/Control_opciones/Configuraciones/KeysButton/TextureButtonUp"]
+layout_mode = 0
+offset_left = 483.0
+offset_top = 8.0
+offset_right = 572.0
+offset_bottom = 66.0
+texture_normal = ExtResource("7_2sycu")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextEdit" type="TextEdit" parent="Opciones/Control_opciones/Configuraciones/KeysButton/TextureButtonUp/TextureButton5"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -42.5
+offset_top = -26.0
+offset_right = 40.5
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ImagenDivisor" type="TextureRect" parent="Opciones/Control_opciones/Configuraciones/KeysButton/TextureButtonUp"]
+layout_mode = 0
+offset_left = 118.0
+offset_top = 18.0
+offset_right = 514.0
+offset_bottom = 58.0
+texture = ExtResource("8_nmpr2")
+expand_mode = 1
+
+[node name="TextureButtonDown" type="TextureButton" parent="Opciones/Control_opciones/Configuraciones/KeysButton"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -288.5
+offset_top = 114.0
+offset_right = -126.5
+offset_bottom = 186.0
+grow_horizontal = 2
+texture_normal = ExtResource("6_djpyw")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label2" type="Label" parent="Opciones/Control_opciones/Configuraciones/KeysButton/TextureButtonDown"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.513
+anchor_bottom = 0.5
+offset_left = -66.0
+offset_top = -19.0
+offset_right = 57.972
+offset_bottom = 14.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "Abajo"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="TextureButton5" type="TextureButton" parent="Opciones/Control_opciones/Configuraciones/KeysButton/TextureButtonDown"]
+layout_mode = 0
+offset_left = 483.0
+offset_top = 8.0
+offset_right = 572.0
+offset_bottom = 66.0
+texture_normal = ExtResource("7_2sycu")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextEdit" type="TextEdit" parent="Opciones/Control_opciones/Configuraciones/KeysButton/TextureButtonDown/TextureButton5"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -42.5
+offset_top = -26.0
+offset_right = 40.5
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ImagenDivisor" type="TextureRect" parent="Opciones/Control_opciones/Configuraciones/KeysButton/TextureButtonDown"]
+layout_mode = 0
+offset_left = 118.0
+offset_top = 18.0
+offset_right = 514.0
+offset_bottom = 58.0
+texture = ExtResource("8_nmpr2")
+expand_mode = 1
+
+[node name="TextureButtonLeft" type="TextureButton" parent="Opciones/Control_opciones/Configuraciones/KeysButton"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -288.5
+offset_top = 194.0
+offset_right = -126.5
+offset_bottom = 266.0
+grow_horizontal = 2
+texture_normal = ExtResource("6_djpyw")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label2" type="Label" parent="Opciones/Control_opciones/Configuraciones/KeysButton/TextureButtonLeft"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.513
+anchor_bottom = 0.5
+offset_left = -66.0
+offset_top = -19.0
+offset_right = 57.972
+offset_bottom = 14.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "Izquierda"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="TextureButton5" type="TextureButton" parent="Opciones/Control_opciones/Configuraciones/KeysButton/TextureButtonLeft"]
+layout_mode = 0
+offset_left = 483.0
+offset_top = 8.0
+offset_right = 572.0
+offset_bottom = 66.0
+texture_normal = ExtResource("7_2sycu")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextEdit" type="TextEdit" parent="Opciones/Control_opciones/Configuraciones/KeysButton/TextureButtonLeft/TextureButton5"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -42.5
+offset_top = -26.0
+offset_right = 40.5
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ImagenDivisor" type="TextureRect" parent="Opciones/Control_opciones/Configuraciones/KeysButton/TextureButtonLeft"]
+layout_mode = 0
+offset_left = 118.0
+offset_top = 18.0
+offset_right = 514.0
+offset_bottom = 58.0
+texture = ExtResource("8_nmpr2")
+expand_mode = 1
+
+[node name="TextureButtonRight" type="TextureButton" parent="Opciones/Control_opciones/Configuraciones/KeysButton"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -288.5
+offset_top = 275.0
+offset_right = -126.5
+offset_bottom = 347.0
+grow_horizontal = 2
+texture_normal = ExtResource("6_djpyw")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label2" type="Label" parent="Opciones/Control_opciones/Configuraciones/KeysButton/TextureButtonRight"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.513
+anchor_bottom = 0.5
+offset_left = -66.0
+offset_top = -19.0
+offset_right = 57.972
+offset_bottom = 14.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "Derecha"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="TextureButton5" type="TextureButton" parent="Opciones/Control_opciones/Configuraciones/KeysButton/TextureButtonRight"]
+layout_mode = 0
+offset_left = 483.0
+offset_top = 8.0
+offset_right = 572.0
+offset_bottom = 66.0
+texture_normal = ExtResource("7_2sycu")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextEdit" type="TextEdit" parent="Opciones/Control_opciones/Configuraciones/KeysButton/TextureButtonRight/TextureButton5"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -42.5
+offset_top = -26.0
+offset_right = 40.5
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ImagenDivisor" type="TextureRect" parent="Opciones/Control_opciones/Configuraciones/KeysButton/TextureButtonRight"]
+layout_mode = 0
+offset_left = 118.0
+offset_top = 18.0
+offset_right = 514.0
+offset_bottom = 58.0
+texture = ExtResource("8_nmpr2")
+expand_mode = 1
+
+[node name="TextureButtonSensibilida" type="TextureButton" parent="Opciones/Control_opciones/Configuraciones/KeysButton"]
+layout_mode = 0
+offset_left = -15.0
+offset_top = 373.0
+offset_right = 154.0
+offset_bottom = 453.0
+texture_normal = ExtResource("6_djpyw")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label2" type="Label" parent="Opciones/Control_opciones/Configuraciones/KeysButton/TextureButtonSensibilida"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -72.5
+offset_top = -31.0
+offset_right = 71.5
+offset_bottom = 32.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 19
+text = "Sensibilidad"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Control" type="HSlider" parent="Opciones/Control_opciones/Configuraciones/KeysButton/TextureButtonSensibilida"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 79.5
+offset_top = -18.0
+offset_right = 632.5
+offset_bottom = 22.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureButton5" type="TextureButton" parent="Opciones/Control_opciones/Configuraciones/KeysButton/TextureButtonSensibilida"]
+layout_mode = 0
+offset_left = 721.0
+offset_top = 10.0
+offset_right = 810.0
+offset_bottom = 68.0
+texture_normal = ExtResource("7_2sycu")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextEdit" type="TextEdit" parent="Opciones/Control_opciones/Configuraciones/KeysButton/TextureButtonSensibilida/TextureButton5"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -42.5
+offset_top = -24.0
+offset_right = 40.5
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SoundControl" type="Control" parent="Opciones/Control_opciones/Configuraciones"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -324.0
+offset_top = -218.0
+offset_right = 316.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureButtonMusica" type="TextureRect" parent="Opciones/Control_opciones/Configuraciones/SoundControl"]
+layout_mode = 0
+offset_left = -14.0
+offset_top = -4.0
+offset_right = 154.0
+offset_bottom = 88.0
+expand_mode = 1
+
+[node name="Label2" type="Label" parent="Opciones/Control_opciones/Configuraciones/SoundControl/TextureButtonMusica"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -52.0
+offset_top = -14.0
+offset_right = 51.0
+offset_bottom = 14.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "Musica"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ControlMusica" type="HSlider" parent="Opciones/Control_opciones/Configuraciones/SoundControl/TextureButtonMusica"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 89.0
+offset_top = -19.5
+offset_right = 459.0
+offset_bottom = 20.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureButton6" type="TextureButton" parent="Opciones/Control_opciones/Configuraciones/SoundControl/TextureButtonMusica"]
+layout_mode = 0
+offset_left = 552.0
+offset_top = 14.0
+offset_right = 641.0
+offset_bottom = 72.0
+texture_normal = ExtResource("7_2sycu")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextureRect" type="TextureRect" parent="Opciones/Control_opciones/Configuraciones/SoundControl/TextureButtonMusica/TextureButton6"]
+layout_mode = 0
+offset_left = -3.0
+offset_top = -5.0
+offset_right = 93.0
+offset_bottom = 63.0
+texture = ExtResource("9_5xwkm")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Opciones/Control_opciones/Configuraciones/SoundControl/TextureButtonMusica/TextureButton6"]
+layout_mode = 0
+offset_right = 88.0
+offset_bottom = 58.0
+theme_override_font_sizes/font_size = 25
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureButtonMusica2" type="TextureRect" parent="Opciones/Control_opciones/Configuraciones/SoundControl"]
+layout_mode = 0
+offset_left = -14.0
+offset_top = 110.0
+offset_right = 154.0
+offset_bottom = 202.0
+expand_mode = 1
+
+[node name="Label2" type="Label" parent="Opciones/Control_opciones/Configuraciones/SoundControl/TextureButtonMusica2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -52.0
+offset_top = -6.5
+offset_right = 51.0
+offset_bottom = 6.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "Sonido"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="TextureButton6" type="TextureButton" parent="Opciones/Control_opciones/Configuraciones/SoundControl/TextureButtonMusica2"]
+layout_mode = 0
+offset_left = 552.0
+offset_top = 14.0
+offset_right = 641.0
+offset_bottom = 72.0
+texture_normal = ExtResource("7_2sycu")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextEdit" type="TextEdit" parent="Opciones/Control_opciones/Configuraciones/SoundControl/TextureButtonMusica2/TextureButton6"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -42.5
+offset_top = -24.0
+offset_right = 40.5
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[node name="ControlMusica" type="HSlider" parent="Opciones/Control_opciones/Configuraciones/SoundControl/TextureButtonMusica2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 89.0
+offset_top = -19.5
+offset_right = 459.0
+offset_bottom = 20.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ControlLenguaje" type="Control" parent="Opciones/Control_opciones/Configuraciones"]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -214.0
+offset_right = 310.0
+offset_bottom = -6.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureButton1" type="TextureButton" parent="Opciones/Control_opciones/Configuraciones/ControlLenguaje"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -40.0
+offset_right = 186.0
+offset_bottom = 40.0
+grow_vertical = 2
+texture_normal = ExtResource("10_jadbi")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="Opciones/Control_opciones/Configuraciones/ControlLenguaje/TextureButton1"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "Lenguaje
+"
+
+[node name="Lenguaje" type="OptionButton" parent="Opciones/Control_opciones/Configuraciones/ControlLenguaje"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -418.0
+offset_top = -42.0
+offset_bottom = 42.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+selected = 0
+item_count = 2
+popup/item_0/text = "Español"
+popup/item_1/text = "Ingles"
+popup/item_1/id = 1
+
+[node name="LenguajeButton" type="Control" parent="Opciones/Control_opciones/Configuraciones"]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ControlButton" type="Control" parent="Opciones/Control_opciones/Configuraciones"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -168.0
+offset_top = 150.0
+offset_right = 168.0
+offset_bottom = 228.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureButton5" type="TextureButton" parent="Opciones/Control_opciones/Configuraciones/ControlButton"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -80.0
+offset_right = 168.0
+grow_vertical = 0
+texture_normal = ExtResource("5_j4v5g")
+texture_pressed = ExtResource("4_1xljc")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label2" type="Label" parent="Opciones/Control_opciones/Configuraciones/ControlButton/TextureButton5"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -59.0
+offset_top = -14.5
+offset_right = 55.0
+offset_bottom = 8.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.674768, 0.811164, 0.289357, 1)
+theme_override_colors/font_shadow_color = Color(0.0358673, 0.110612, 0.0470687, 1)
+theme_override_colors/font_outline_color = Color(0.242738, 0.506672, 0.499439, 1)
+theme_override_font_sizes/font_size = 24
+text = "Guardar"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureButton6" type="TextureButton" parent="Opciones/Control_opciones/Configuraciones/ControlButton"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -160.0
+offset_top = -80.0
+grow_horizontal = 0
+grow_vertical = 0
+texture_normal = ExtResource("5_j4v5g")
+texture_pressed = ExtResource("4_1xljc")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label2" type="Label" parent="Opciones/Control_opciones/Configuraciones/ControlButton/TextureButton6"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -57.0
+offset_top = -17.0
+offset_right = 57.0
+offset_bottom = 17.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.674768, 0.811164, 0.289357, 1)
+theme_override_colors/font_shadow_color = Color(0.0358673, 0.110612, 0.0470687, 1)
+theme_override_colors/font_outline_color = Color(0.242738, 0.506672, 0.499439, 1)
+theme_override_font_sizes/font_size = 24
+text = "Reset"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ControlButtonPrincipales" type="Control" parent="Opciones"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -387.936
+offset_top = -284.5
+offset_right = 399.936
+offset_bottom = -189.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ButtonControl" type="TextureButton" parent="Opciones/ControlButtonPrincipales"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -132.0
+offset_top = -47.5
+offset_right = 132.0
+offset_bottom = 47.5
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("5_j4v5g")
+texture_pressed = ExtResource("4_1xljc")
+texture_hover = ExtResource("4_1xljc")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label2" type="Label" parent="Opciones/ControlButtonPrincipales/ButtonControl"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -59.0
+offset_top = -14.5
+offset_right = 55.0
+offset_bottom = 8.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.674768, 0.811164, 0.289357, 1)
+theme_override_colors/font_shadow_color = Color(0.0358673, 0.110612, 0.0470687, 1)
+theme_override_colors/font_outline_color = Color(0.242738, 0.506672, 0.499439, 1)
+theme_override_font_sizes/font_size = 24
+text = "Control"
+
+[node name="ButtonSonido" type="TextureButton" parent="Opciones/ControlButtonPrincipales"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 4.0
+offset_top = -47.5
+offset_right = 268.0
+offset_bottom = 47.5
+grow_vertical = 2
+texture_normal = ExtResource("5_j4v5g")
+texture_pressed = ExtResource("4_1xljc")
+texture_hover = ExtResource("4_1xljc")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label2" type="Label" parent="Opciones/ControlButtonPrincipales/ButtonSonido"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -59.0
+offset_top = -14.5
+offset_right = 55.0
+offset_bottom = 8.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.674768, 0.811164, 0.289357, 1)
+theme_override_colors/font_shadow_color = Color(0.0358673, 0.110612, 0.0470687, 1)
+theme_override_colors/font_outline_color = Color(0.242738, 0.506672, 0.499439, 1)
+theme_override_font_sizes/font_size = 24
+text = "SONIDO"
+
+[node name="ButtonLenguaje" type="TextureButton" parent="Opciones/ControlButtonPrincipales"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -256.0
+offset_top = -47.5
+offset_bottom = 47.5
+grow_horizontal = 0
+grow_vertical = 2
+texture_normal = ExtResource("5_j4v5g")
+texture_pressed = ExtResource("4_1xljc")
+texture_hover = ExtResource("4_1xljc")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label2" type="Label" parent="Opciones/ControlButtonPrincipales/ButtonLenguaje"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -59.0
+offset_top = -14.5
+offset_right = 55.0
+offset_bottom = 8.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.674768, 0.811164, 0.289357, 1)
+theme_override_colors/font_shadow_color = Color(0.0358673, 0.110612, 0.0470687, 1)
+theme_override_colors/font_outline_color = Color(0.242738, 0.506672, 0.499439, 1)
+theme_override_font_sizes/font_size = 24
+text = "LENGUAJE"
+
+[node name="return" type="TextureButton" parent="Opciones"]
+process_mode = 3
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 338.0
+offset_top = -460.0
+offset_right = 463.0
+offset_bottom = -335.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("3_30jfn")
+
 [node name="Timer" type="Timer" parent="."]
 
 [connection signal="pressed" from="Paused/Continue" to="." method="_on_continue_pressed"]
+[connection signal="pressed" from="Paused/opciones2" to="." method="_on_opciones_2_pressed"]
 [connection signal="pressed" from="Paused/Quitar" to="." method="_on_quitar_pressed"]
+[connection signal="value_changed" from="Opciones/Control_opciones/Configuraciones/SoundControl/TextureButtonMusica/ControlMusica" to="Opciones" method="_on_control_musica_value_changed"]
+[connection signal="pressed" from="Opciones/ControlButtonPrincipales/ButtonControl" to="." method="_on_button_control_pressed"]
+[connection signal="pressed" from="Opciones/ControlButtonPrincipales/ButtonSonido" to="." method="_on_button_sonido_pressed"]
+[connection signal="pressed" from="Opciones/ControlButtonPrincipales/ButtonLenguaje" to="." method="_on_button_lenguaje_pressed"]
+[connection signal="pressed" from="Opciones/return" to="." method="_on_return_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
