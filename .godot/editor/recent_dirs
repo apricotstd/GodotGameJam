@@ -1,3 +1,4 @@
+res://scripts
 res://assets
 res://bin/game
 res://bin/other
@@ -7,7 +8,6 @@ res://assets/fondos/background
 res://
 res://bin/player
 <<<<<<< HEAD
-res://scripts
 res://assets/botones
 =======
 >>>>>>> shiro

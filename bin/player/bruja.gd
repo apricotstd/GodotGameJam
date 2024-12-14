@@ -1,5 +1,6 @@
-extends Area2D
+extends CharacterBody2D
 
+@export var speed = 200.0
 var eje = "x"
 
 var mensajesBruja = [
@@ -17,11 +18,10 @@ func changeEje(ej):
 	pass
 
 func _process(delta: float) -> void:
-	if self.visible:
-		if eje == "x":
-			self.global_position.x += 2
-		else:
-			self.global_position.x -= 2
+	if Gl.player != null:
+		var direction = (Gl.player.global_position - position).normalized()
+		velocity = direction * speed
+		move_and_slide()
 	pass
 
 func _on_body_entered(body: Node2D) -> void:

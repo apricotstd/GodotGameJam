@@ -1,3 +1,4 @@
+CharacterBody2D
 TileMapLayer
 Parallax2D
 Node2D
@@ -12,4 +13,3 @@ Timer
 Button
 LineEdit
 RichTextLabel
-CanvasLayer

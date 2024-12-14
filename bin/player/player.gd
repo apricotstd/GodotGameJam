@@ -5,6 +5,10 @@ const JUMP_VELOCITY = -600.0
 
 @onready var sprite = $Col/Imgs
 
+func _ready() -> void:
+	Gl.player = self
+	pass
+
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():
