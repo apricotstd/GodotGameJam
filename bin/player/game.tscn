@@ -10,8 +10,8 @@
 [ext_resource type="Texture2D" uid="uid://eq0mdx325dfm" path="res://assets/fondos/AVATAR_ContainerBox.png" id="6_djpyw"]
 [ext_resource type="Texture2D" uid="uid://cnmetxk0xpoyn" path="res://assets/botones/Big_PANEL_BorderSelected.png" id="7_2sycu"]
 [ext_resource type="Texture2D" uid="uid://f6neo66smnos" path="res://assets/botones/Icon_DivisorLine_Horizontal2.png" id="8_nmpr2"]
-[ext_resource type="Texture2D" uid="uid://b5rtyrl8s5f7e" path="res://assets/fondos/REPORT_BG_FieldArea.png" id="9_5xwkm"]
 [ext_resource type="Texture2D" uid="uid://d003u60x3cgg8" path="res://assets/botones/Big_PANEL_Border.png" id="10_jadbi"]
+[ext_resource type="PackedScene" uid="uid://bhtm8o45feoxc" path="res://bin/other/lluvia.tscn" id="12_u2lo1"]
 
 [node name="Game" type="CanvasLayer"]
 script = ExtResource("1_ydbv1")
@@ -647,7 +647,6 @@ offset_left = -3.0
 offset_top = -5.0
 offset_right = 93.0
 offset_bottom = 63.0
-texture = ExtResource("9_5xwkm")
 expand_mode = 1
 
 [node name="Label" type="Label" parent="Opciones/Control_opciones/Configuraciones/SoundControl/TextureButtonMusica/TextureButton6"]
@@ -1025,9 +1024,9 @@ grow_horizontal = 2
 grow_vertical = 2
 texture_normal = ExtResource("3_30jfn")
 
-[node name="Timer" type="Timer" parent="."]
+[node name="Lluvia" parent="." instance=ExtResource("12_u2lo1")]
 
-[node name="Lluvia" parent="." instance=ExtResource("3_m32oj")]
+[node name="Timer" type="Timer" parent="."]
 
 [connection signal="pressed" from="Paused/Continue" to="." method="_on_continue_pressed"]
 [connection signal="pressed" from="Paused/opciones2" to="." method="_on_opciones_2_pressed"]
