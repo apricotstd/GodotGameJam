@@ -40,3 +40,7 @@ func _on_cahnge_positio_bruja_2_body_entered(body: Node2D) -> void:
 		bruja.global_position.y -= 400
 		bruja.changeEje("y")
 	pass # Replace with function body.
+
+func _on_piramide_body_entered(body: Node2D) -> void:
+	get_tree().change_scene_to_file("res://bin/game/scenarioGame1.tscn")
+	pass # Replace with function body.
