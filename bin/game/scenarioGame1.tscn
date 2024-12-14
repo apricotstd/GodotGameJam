@@ -600,7 +600,8 @@ tile_map_data = PackedByteArray("AAACAAMAAAAAAAAAAAACAAQAAAAAAAEAAAACAAUAAAASAAE
 tile_set = SubResource("TileSet_bjddj")
 
 [node name="Player" parent="." instance=ExtResource("2_c31q0")]
-position = Vector2(9270, 1245)
+position = Vector2(9126, 2101)
+scale = Vector2(1, 0.984861)
 
 [node name="grEscalera" type="Node2D" parent="."]
 

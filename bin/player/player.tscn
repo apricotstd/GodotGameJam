@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://ugwkjk05qb5u"]
+[gd_scene load_steps=15 format=3 uid="uid://ugwkjk05qb5u"]
 
 [ext_resource type="Script" path="res://bin/player/player.gd" id="1_8j4dm"]
 [ext_resource type="Texture2D" uid="uid://c8rtkhxoond04" path="res://assets/player/idle/fotograma0000.png" id="1_s1bvn"]
@@ -10,6 +10,8 @@
 [ext_resource type="Texture2D" uid="uid://cruyguae61im8" path="res://assets/player/move/fotograma0009.png" id="7_i4fnk"]
 [ext_resource type="Texture2D" uid="uid://clkvnhm8l58l1" path="res://assets/player/move/fotograma0012.png" id="8_yb6nr"]
 [ext_resource type="PackedScene" uid="uid://ryr2vc4aj4y" path="res://bin/player/game.tscn" id="10_1v346"]
+[ext_resource type="Texture2D" uid="uid://b8sqbphn72n04" path="res://assets/player/subir/subir.png" id="10_pa1u6"]
+[ext_resource type="Texture2D" uid="uid://6vnnda8keetw" path="res://assets/player/subir/subir2.png" id="11_smklu"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_oddt5"]
 radius = 44.0
@@ -50,6 +52,17 @@ animations = [{
 "loop": true,
 "name": &"move",
 "speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_pa1u6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_smklu")
+}],
+"loop": true,
+"name": &"subir",
+"speed": 3.0
 }]
 
 [node name="Player" type="CharacterBody2D" groups=["player"]]
@@ -63,8 +76,8 @@ shape = SubResource("CapsuleShape2D_oddt5")
 position = Vector2(-0.500001, 1.9)
 scale = Vector2(0.2, 0.2)
 sprite_frames = SubResource("SpriteFrames_ggf4s")
-animation = &"move"
-frame_progress = 0.129975
+animation = &"subir"
+frame_progress = 0.560715
 
 [node name="Camera2D" type="Camera2D" parent="." groups=["player"]]
 position_smoothing_speed = 5.29
