@@ -1,9 +1,9 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1734204303
+::res://::1734204595
 export_presets.cfg::TextFile::-1::1734203643::0::1::::<><>::
 icon.svg::CompressedTexture2D::1744855980132017205::1734203643::1734203804::1::::<><>::
 init.gd::GDScript::-1::1734203643::0::1::::<>Control<>::
-init.tscn::PackedScene::3017672570820722820::1734203830::0::1::::<><>::uid://bjo48ebvrprj0::::res://assets/logo/apricot diseño.png<>res://init.gd
+init.tscn::PackedScene::3017672570820722820::1734204315::0::1::::<><>::uid://bjo48ebvrprj0::::res://assets/logo/apricot diseño.png<>res://init.gd
 ::res://assets/::1734203812
 Area-Escalera.png::CompressedTexture2D::8168424948277779221::1734203643::1734203812::1::::<><>::
 chat.png::CompressedTexture2D::6097597348207623404::1734203643::1734203804::1::::<><>::
