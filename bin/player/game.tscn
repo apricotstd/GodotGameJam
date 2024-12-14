@@ -1031,7 +1031,7 @@ texture_normal = ExtResource("3_30jfn")
 [connection signal="pressed" from="Paused/Continue" to="." method="_on_continue_pressed"]
 [connection signal="pressed" from="Paused/opciones2" to="." method="_on_opciones_2_pressed"]
 [connection signal="pressed" from="Paused/Quitar" to="." method="_on_quitar_pressed"]
-[connection signal="value_changed" from="Opciones/Control_opciones/Configuraciones/SoundControl/TextureButtonMusica/ControlMusica" to="Opciones" method="_on_control_musica_value_changed"]
+[connection signal="value_changed" from="Opciones/Control_opciones/Configuraciones/SoundControl/TextureButtonMusica/ControlMusica" to="." method="_on_control_musica_value_changed"]
 [connection signal="pressed" from="Opciones/ControlButtonPrincipales/ButtonControl" to="." method="_on_button_control_pressed"]
 [connection signal="pressed" from="Opciones/ControlButtonPrincipales/ButtonSonido" to="." method="_on_button_sonido_pressed"]
 [connection signal="pressed" from="Opciones/ControlButtonPrincipales/ButtonLenguaje" to="." method="_on_button_lenguaje_pressed"]
