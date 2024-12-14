@@ -6,11 +6,16 @@
 [ext_resource type="FontFile" uid="uid://oc6h0d3ahcg0" path="res://assets/fuentes/FlyLegs.otf" id="4_1co1w"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_w85vq"]
-radius = 114.0
-height = 594.0
+radius = 242.0
+height = 646.0
 
 [node name="Bruja" type="CharacterBody2D"]
 script = ExtResource("1_oekju")
+
+[node name="Contact" type="Area2D" parent="."]
+
+[node name="Col" type="CollisionShape2D" parent="Contact"]
+shape = SubResource("CapsuleShape2D_w85vq")
 
 [node name="bruja" type="Sprite2D" parent="."]
 scale = Vector2(0.482639, 0.43099)
@@ -36,5 +41,6 @@ autowrap_mode = 2
 
 [node name="visible" type="VisibleOnScreenNotifier2D" parent="."]
 
+[connection signal="body_entered" from="Contact" to="." method="_on_contact_body_entered"]
 [connection signal="screen_entered" from="visible" to="." method="_on_visible_screen_entered"]
 [connection signal="screen_exited" from="visible" to="." method="_on_visible_screen_exited"]
