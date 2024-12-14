@@ -2,7 +2,7 @@ extends CanvasLayer
 
 var elapsed_time: int = 0 
 var timer_started: bool = false
-
+var  volumenM = 1
 @onready var time = $Time
 
 func _ready():
@@ -70,22 +70,25 @@ func _on_return_pressed() -> void:
 
 
 func _on_texture_button_2_pressed() -> void:
+	get_tree().paused = true
 	$Opciones/Control_opciones/KeysControl.hide()
 	$Opciones/Control_opciones/SoundButton.show()
-	$Opciones/Control_opciones/LenguajeButton.hide()
+	
 	pass # Replace with function body.
 
 func _on_button_control_pressed() -> void:
+	get_tree().paused = true
 	$Opciones/Control_opciones/Configuraciones/KeysButton.show()
 	$Opciones/Control_opciones/Configuraciones/SoundControl.hide()
-	$Opciones/Control_opciones/Configuraciones/ControlLenguaje.hide()
+
 	pass # Replace with function body.
 
 
 func _on_button_sonido_pressed() -> void:
+	get_tree().paused = true
 	$Opciones/Control_opciones/Configuraciones/KeysButton.hide()
 	$Opciones/Control_opciones/Configuraciones/SoundControl.show()
-	$Opciones/Control_opciones/Configuraciones/ControlLenguaje.hide()
+	
 	
 	
 	pass # Replace with function body.
@@ -96,3 +99,25 @@ func _on_button_lenguaje_pressed() -> void:
 	$Opciones/Control_opciones/Configuraciones/SoundControl.hide()
 	$Opciones/Control_opciones/Configuraciones/ControlLenguaje.show()
 	pass # Replace with function body.
+
+
+	
+func _on_control_musica_value_changed(value: float) -> void:
+	volumenM = value
+	print("VolumenM actualizado a: ", volumenM)  
+	volumenMusica(0, value)
+
+func volumenMusica(bus_index, value: float) -> void:
+	value = clamp(value, 0, 15)
+	actualizar_label(value)
+	if value == 0:
+		AudioServer.set_bus_mute(bus_index, true)
+	else:
+		AudioServer.set_bus_mute(bus_index, false)
+		AudioServer.set_bus_volume_db(bus_index, value)
+
+# Función para actualizar el texto del Label
+func actualizar_label(value: float) -> void:
+	$Opciones/Control_opciones/Configuraciones/SoundControl/TextureButtonMusica/TextureButton6/Label.text = str(value)
+	print("Label actualizado a: ", str(value))  #
+	

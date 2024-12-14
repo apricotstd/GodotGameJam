@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dk42spwp1lrl3"]
+
+[ext_resource type="Texture2D" uid="uid://cdxwjcxnnutl5" path="res://assets/fondos/background/Escalerita.png" id="1_rmgsb"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fxe54"]
+radius = 28.0
+height = 382.0
+
+[node name="escalera" type="Area2D" groups=["escalera"]]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_rmgsb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -6)
+shape = SubResource("CapsuleShape2D_fxe54")

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b86k05hpm84dr"
-path="res://.godot/imported/escalera.png-c6b3eb344f61de65e697e1ced1b633e6.ctex"
+uid="uid://cdxwjcxnnutl5"
+path="res://.godot/imported/Escalerita.png-1a89e447fb9865581596f7e1e47b23ec.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/nubes/escalera.png"
-dest_files=["res://.godot/imported/escalera.png-c6b3eb344f61de65e697e1ced1b633e6.ctex"]
+source_file="res://assets/fondos/background/Escalerita.png"
+dest_files=["res://.godot/imported/Escalerita.png-1a89e447fb9865581596f7e1e47b23ec.ctex"]
 
 [params]
 
