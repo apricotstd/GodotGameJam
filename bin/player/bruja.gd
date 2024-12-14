@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var speed = 300.0
+@export var speed = 250.0
 var eje = "x"
 
 var mensajesBruja = [
