@@ -9,14 +9,16 @@ func _ready():
 	elapsed_time = 0
 	$Timer.start()
 	timer_started = true
-	
+	set_process_unhandled_input(true) 
+	process_mode = Node.PROCESS_MODE_ALWAYS
+
 func _stop_timer(): 
 	timer_started = false 
 
 func _on_timer_timeout() -> void:
 	if timer_started: 
 		elapsed_time += 1 
-		update_timer_label() 
+		update_timer_label()
 
 func update_timer_label():
 	var minutes = int(elapsed_time) / 60 
@@ -24,11 +26,14 @@ func update_timer_label():
 	print(minutes, " ", seconds)
 	time.text = "%02d:%02d" % [minutes, seconds] 
 
-func _input(event: InputEvent) -> void: 
+func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventKey and event.pressed: 
 		if event.keycode == KEY_ENTER or event.keycode == KEY_KP_ENTER:
-			get_tree().paused = true
-			$Paused.show()
+			if !get_tree().paused:
+				get_tree().paused = true
+				$Paused.show()
+			else:
+				_on_continue_pressed()
 	pass
 	
 func dead():
