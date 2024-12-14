@@ -1,16 +1,17 @@
+res://assets
+res://bin/game
+res://bin/other
 res://assets/fondos
 res://assets/fuentes
 res://assets/fondos/background
 res://
 res://bin/player
-res://bin/game
 <<<<<<< HEAD
 res://scripts
 res://assets/botones
 =======
 >>>>>>> shiro
 D:/Descargas/gamepj
-res://bin/other
 res://bin/views/menu
 res://assets/sprites/nubes
 res://bin/tiles
