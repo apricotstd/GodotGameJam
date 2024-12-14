@@ -60,7 +60,7 @@ position = Vector2(8076, 1958)
 scale = Vector2(1, -2.4)
 
 [node name="escalera14" parent="." instance=ExtResource("6_bihss")]
-position = Vector2(7559, 1040)
+position = Vector2(7634, 1042)
 scale = Vector2(1, -2.45)
 
 [node name="escalera2" parent="." instance=ExtResource("6_bihss")]
