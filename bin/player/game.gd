@@ -70,22 +70,25 @@ func _on_return_pressed() -> void:
 
 
 func _on_texture_button_2_pressed() -> void:
+	get_tree().paused = true
 	$Opciones/Control_opciones/KeysControl.hide()
 	$Opciones/Control_opciones/SoundButton.show()
-	$Opciones/Control_opciones/LenguajeButton.hide()
+	
 	pass # Replace with function body.
 
 func _on_button_control_pressed() -> void:
+	get_tree().paused = true
 	$Opciones/Control_opciones/Configuraciones/KeysButton.show()
 	$Opciones/Control_opciones/Configuraciones/SoundControl.hide()
-	$Opciones/Control_opciones/Configuraciones/ControlLenguaje.hide()
+
 	pass # Replace with function body.
 
 
 func _on_button_sonido_pressed() -> void:
+	get_tree().paused = true
 	$Opciones/Control_opciones/Configuraciones/KeysButton.hide()
 	$Opciones/Control_opciones/Configuraciones/SoundControl.show()
-	$Opciones/Control_opciones/Configuraciones/ControlLenguaje.hide()
+	
 	
 	
 	pass # Replace with function body.

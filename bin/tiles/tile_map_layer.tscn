@@ -1,9 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://d2trdu3ep3w5g"]
+[gd_scene load_steps=8 format=3 uid="uid://d2trdu3ep3w5g"]
 
 [ext_resource type="Texture2D" uid="uid://dkl7w1a5xje0l" path="res://assets/fondos/tilemaplvl1.png" id="1_dtqmx"]
 [ext_resource type="Texture2D" uid="uid://btc1n7qu7y3ba" path="res://assets/sprites/arboles/tierra.png" id="2_vx1ys"]
 [ext_resource type="Texture2D" uid="uid://bn6uq1035b6qc" path="res://assets/sprites/nubes/piso.png" id="3_wbky5"]
-[ext_resource type="Texture2D" uid="uid://b86k05hpm84dr" path="res://assets/sprites/nubes/escalera.png" id="4_71iis"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_686pa"]
 texture = ExtResource("1_dtqmx")
@@ -1419,117 +1418,11 @@ texture = ExtResource("3_wbky5")
 26:9/0 = 0
 26:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vfb10"]
-texture = ExtResource("4_71iis")
-1:0/0 = 0
-2:0/0 = 0
-3:0/0 = 0
-4:0/0 = 0
-5:0/0 = 0
-6:0/0 = 0
-1:1/0 = 0
-2:1/0 = 0
-3:1/0 = 0
-4:1/0 = 0
-5:1/0 = 0
-6:1/0 = 0
-1:2/0 = 0
-5:2/0 = 0
-6:2/0 = 0
-1:3/0 = 0
-5:3/0 = 0
-6:3/0 = 0
-1:4/0 = 0
-2:4/0 = 0
-3:4/0 = 0
-4:4/0 = 0
-5:4/0 = 0
-6:4/0 = 0
-1:5/0 = 0
-2:5/0 = 0
-3:5/0 = 0
-4:5/0 = 0
-5:5/0 = 0
-6:5/0 = 0
-1:6/0 = 0
-5:6/0 = 0
-6:6/0 = 0
-1:7/0 = 0
-5:7/0 = 0
-6:7/0 = 0
-1:8/0 = 0
-2:8/0 = 0
-3:8/0 = 0
-4:8/0 = 0
-5:8/0 = 0
-6:8/0 = 0
-1:9/0 = 0
-2:9/0 = 0
-3:9/0 = 0
-4:9/0 = 0
-5:9/0 = 0
-6:9/0 = 0
-1:10/0 = 0
-5:10/0 = 0
-6:10/0 = 0
-1:11/0 = 0
-5:11/0 = 0
-6:11/0 = 0
-1:12/0 = 0
-2:12/0 = 0
-3:12/0 = 0
-4:12/0 = 0
-5:12/0 = 0
-6:12/0 = 0
-1:13/0 = 0
-2:13/0 = 0
-3:13/0 = 0
-4:13/0 = 0
-5:13/0 = 0
-6:13/0 = 0
-1:14/0 = 0
-5:14/0 = 0
-6:14/0 = 0
-1:15/0 = 0
-5:15/0 = 0
-6:15/0 = 0
-1:16/0 = 0
-2:16/0 = 0
-3:16/0 = 0
-4:16/0 = 0
-5:16/0 = 0
-6:16/0 = 0
-1:17/0 = 0
-2:17/0 = 0
-3:17/0 = 0
-4:17/0 = 0
-5:17/0 = 0
-6:17/0 = 0
-1:18/0 = 0
-5:18/0 = 0
-6:18/0 = 0
-1:19/0 = 0
-5:19/0 = 0
-6:19/0 = 0
-1:20/0 = 0
-2:20/0 = 0
-3:20/0 = 0
-4:20/0 = 0
-5:20/0 = 0
-6:20/0 = 0
-1:21/0 = 0
-2:21/0 = 0
-3:21/0 = 0
-4:21/0 = 0
-5:21/0 = 0
-6:21/0 = 0
-
 [sub_resource type="TileSet" id="TileSet_8jmjq"]
 physics_layer_0/collision_layer = 1
 terrain_set_0/mode = 0
 sources/0 = SubResource("TileSetAtlasSource_686pa")
 sources/1 = SubResource("TileSetAtlasSource_ysd78")
-sources/4 = SubResource("TileSetAtlasSource_vfb10")
 sources/3 = SubResource("TileSetAtlasSource_01nqq")
 
 [node name="TileMapLayer" type="TileMapLayer"]
