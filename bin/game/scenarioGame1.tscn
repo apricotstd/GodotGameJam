@@ -656,7 +656,7 @@ position = Vector2(-5209, 1624)
 scale = Vector2(1, 0.907963)
 
 [node name="Player" parent="." instance=ExtResource("2_c31q0")]
-position = Vector2(-209, -496)
+position = Vector2(9155, 1690)
 scale = Vector2(1, 0.984861)
 
 [node name="Marker2D" type="Marker2D" parent="."]
