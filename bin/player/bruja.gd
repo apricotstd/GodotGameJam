@@ -9,6 +9,9 @@ var mensajesBruja = [
 	"seras mia"
 ]
 
+func _ready() -> void:
+	Gl.bruja = self
+
 # Called when the node enters the scene tree for the first time.
 func emit_song() -> void:
 	$sonidp.play()
@@ -44,3 +47,13 @@ func _on_contact_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
 		body.dead()
 	pass # Replace with function body.
+
+func transporte(v):
+	var value = randi_range(0, 1)
+	if value == 1:
+		v.x = (v.x - 1000)
+	else:
+		v.x = (v.x + 1000)	
+	v.y = (v.y - 200)
+	self.global_position = v
+	pass
