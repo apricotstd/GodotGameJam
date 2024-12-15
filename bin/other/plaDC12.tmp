@@ -7,7 +7,6 @@
 size = Vector2(390, 100)
 
 [node name="plataforma" type="CharacterBody2D"]
-motion_mode = 1
 script = ExtResource("1_3oydo")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

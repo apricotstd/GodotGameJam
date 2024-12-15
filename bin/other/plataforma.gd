@@ -8,8 +8,8 @@ var pos = 0
 
 func _ready() -> void:
 	set_physics_process(false)
-	if is_instance_valid(get_node("GroupDirection")):
-		direcciones = get_node("GroupDirection").get_children()
+	if is_instance_valid(get_parent().get_node("GroupDirection")):
+		direcciones = get_parent().get_node("GroupDirection").get_children()
 		set_physics_process(true)
 	pass
 
