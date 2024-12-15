@@ -2,8 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://dpkavkayfufwx" path="res://bin/game/scenarioGame1.tscn" id="1_53vr8"]
 [ext_resource type="PackedScene" uid="uid://busm227lfbeg3" path="res://bin/other/plataforma.tscn" id="2_vlpfh"]
-[ext_resource type="PackedScene" uid="uid://r3t6pn5n1k81" path="res://bin/other/show_boss.tscn" id="3_n8f43"]
-[ext_resource type="PackedScene" uid="uid://t846obte7pmw" path="res://bin/other/caida.tscn" id="4_h0583"]
+[ext_resource type="PackedScene" path="res://bin/other/show_boss.tscn" id="3_n8f43"]
+[ext_resource type="PackedScene" path="res://bin/other/caida.tscn" id="4_h0583"]
 
 [node name="Node2D" type="Node2D"]
 
