@@ -1,14 +1,22 @@
-[gd_scene load_steps=3 format=3 uid="uid://d3ykv2kimj8xb"]
+[gd_scene load_steps=4 format=3 uid="uid://d3ykv2kimj8xb"]
 
+[ext_resource type="Script" path="res://bin/other/door.gd" id="1_fd11y"]
 [ext_resource type="Texture2D" uid="uid://cxrpoy5y4uy0a" path="res://assets/player/espejo/espejo.png" id="1_n2v7f"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_one5q"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s7bmm"]
+size = Vector2(197, 331)
 
 [node name="Door" type="Area2D"]
+script = ExtResource("1_fd11y")
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_one5q")
+position = Vector2(0.5, 17.5)
+shape = SubResource("RectangleShape2D_s7bmm")
 
 [node name="Espejo" type="Sprite2D" parent="."]
 scale = Vector2(0.257639, 0.248698)
 texture = ExtResource("1_n2v7f")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

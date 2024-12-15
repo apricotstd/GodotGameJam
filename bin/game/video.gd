@@ -7,13 +7,13 @@ var initDialog = false
 
 var dialogInicial = [
 		"[color=green]Niña[/color]: OH, Donde estoy?",
-		"[color=red]Bruja[/color]: JAJAJAJAJAJA....",
-		"[color=red]Bruja[/color]: ¡Ho! niña, has venido a mi mundo....",
+		"[color=red]Sayona[/color]: JAJAJAJAJAJA....",
+		"[color=red]Sayona[/color]: ¡Ho! niña, has venido a mi mundo....",
 		"[color=green]Niña[/color]: AAAAAAAAAAAAA...?",
 		"[color=green]Niña[/color]: Quien eres tú?",
-		"[color=red]Bruja[/color]: Tú peor pesadilla... este lugar es",
-		"[color=red]Bruja[/color]: Un lugar donde no hay nada, solo pesadillas...",
-		"[color=red]Bruja[/color]: JAJAJAJAJAJAJA"
+		"[color=red]Sayona[/color]: Tú peor pesadilla... este lugar es",
+		"[color=red]Sayona[/color]: Un lugar donde no hay nada, solo pesadillas...",
+		"[color=red]Sayona[/color]: JAJAJAJAJAJAJA"
 ]
 
 var indexDialog = 0

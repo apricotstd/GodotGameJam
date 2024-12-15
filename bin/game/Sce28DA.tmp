@@ -20,31 +20,24 @@ metadata/_edit_lock_ = true
 
 [node name="ShowBoss3" parent="." instance=ExtResource("3_n8f43")]
 position = Vector2(2789, 2315)
-metadata/_edit_lock_ = true
 
 [node name="ShowBoss4" parent="." instance=ExtResource("3_n8f43")]
 position = Vector2(-764, 1037)
-metadata/_edit_lock_ = true
 
 [node name="ShowBoss5" parent="." instance=ExtResource("3_n8f43")]
-position = Vector2(-949, 1675)
-metadata/_edit_lock_ = true
+position = Vector2(-2695, 1675)
 
 [node name="ShowBoss6" parent="." instance=ExtResource("3_n8f43")]
-position = Vector2(-2891, 2338)
-metadata/_edit_lock_ = true
+position = Vector2(-908, 2304)
 
 [node name="ShowBoss7" parent="." instance=ExtResource("3_n8f43")]
-position = Vector2(-3303, 878)
-metadata/_edit_lock_ = true
+position = Vector2(-4125, 446)
 
 [node name="ShowBoss8" parent="." instance=ExtResource("3_n8f43")]
-position = Vector2(-5239, 1149)
-metadata/_edit_lock_ = true
+position = Vector2(-2518, 446)
 
 [node name="Caida" parent="." instance=ExtResource("4_h0583")]
 position = Vector2(1620, 3216)
-metadata/_edit_lock_ = true
 
 [node name="Door" parent="." instance=ExtResource("5_jkp55")]
-position = Vector2(-5900, 2199)
+position = Vector2(-849, 362)

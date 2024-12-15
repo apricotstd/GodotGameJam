@@ -54,6 +54,13 @@ func _on_continue_pressed() -> void:
 	$Paused.hide()
 	pass # Replace with function body.
 
+func win():
+	get_tree().paused = true
+	$Win.show()
+	await get_tree().create_timer(5).timeout
+	get_tree().paused = false
+	get_tree().change_scene_to_file("res://bin/views/menu/menu.tscn")
+	pass
 
 func _on_opciones_2_pressed() -> void:
 	$Paused.hide()
@@ -88,9 +95,6 @@ func _on_button_sonido_pressed() -> void:
 	get_tree().paused = true
 	$Opciones/Control_opciones/Configuraciones/KeysButton.hide()
 	$Opciones/Control_opciones/Configuraciones/SoundControl.show()
-	
-	
-	
 	pass # Replace with function body.
 
 
