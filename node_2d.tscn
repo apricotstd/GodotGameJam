@@ -22,7 +22,7 @@ position = Vector2(-899, -666)
 position = Vector2(-1965, 945)
 
 [node name="second2" type="Marker2D" parent="GrPlatform/GroupDirection"]
-position = Vector2(157, 13)
+position = Vector2(76, 7)
 
 [node name="plataforma2" parent="." instance=ExtResource("2_vlpfh")]
 position = Vector2(667, 339)
