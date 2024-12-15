@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3ykv2kimj8xb"]
+
+[ext_resource type="Texture2D" uid="uid://cxrpoy5y4uy0a" path="res://assets/player/espejo/espejo.png" id="1_n2v7f"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_one5q"]
+
+[node name="Door" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_one5q")
+
+[node name="Espejo" type="Sprite2D" parent="."]
+scale = Vector2(0.257639, 0.248698)
+texture = ExtResource("1_n2v7f")

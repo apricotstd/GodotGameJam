@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cfroh24myd2yp"
-path="res://.godot/imported/brujalado.png-59f09c7af0ec3d65ad78cae2376a19c7.ctex"
+uid="uid://bdrpy2j7jjqlh"
+path="res://.godot/imported/logogame.png-0deecdbea344fa57c2af80b1c423ec98.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/bruja/brujalado.png"
-dest_files=["res://.godot/imported/brujalado.png-59f09c7af0ec3d65ad78cae2376a19c7.ctex"]
+source_file="res://assets/logogame.png"
+dest_files=["res://.godot/imported/logogame.png-0deecdbea344fa57c2af80b1c423ec98.ctex"]
 
 [params]
 
