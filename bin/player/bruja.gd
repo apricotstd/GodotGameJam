@@ -11,10 +11,22 @@ var mensajesBruja = [
 
 func _ready() -> void:
 	Gl.bruja = self
-
+	
 # Called when the node enters the scene tree for the first time.
 func emit_song() -> void:
 	$sonidp.play()
+
+func desaparecer():
+	self.show()
+	$Contact/Col.disabled = false
+	$Col.disabled = false
+	await get_tree().create_timer(randi_range(10, 60)).timeout
+	self.hide()
+	$Contact/Col.disabled = true
+	$Col.disabled = true
+	await get_tree().create_timer(randi_range(10, 60)).timeout
+	desaparecer()
+	pass
 
 func changeEje(ej):
 	eje = ej
@@ -56,4 +68,7 @@ func transporte(v):
 		v.x = (v.x + 1000)	
 	v.y = (v.y - 200)
 	self.global_position = v
+	self.show()
+	$Contact/Col.disabled = false
+	$Col.disabled = false
 	pass
