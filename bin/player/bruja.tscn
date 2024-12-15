@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://dcfdci87i4pdp"]
 
 [ext_resource type="Script" path="res://bin/player/bruja.gd" id="1_oekju"]
-[ext_resource type="Texture2D" uid="uid://dttt2jqkaolgd" path="res://assets/bruja/brujalado.png" id="2_6io7w"]
+[ext_resource type="Texture2D" uid="uid://cfroh24myd2yp" path="res://assets/bruja/brujalado.png" id="2_6io7w"]
 [ext_resource type="AudioStream" uid="uid://doswwjwv7v0ry" path="res://assets/sonidos/ghosts-on-film-185898.mp3" id="3_dn4yj"]
 [ext_resource type="FontFile" uid="uid://oc6h0d3ahcg0" path="res://assets/fuentes/FlyLegs.otf" id="4_1co1w"]
 

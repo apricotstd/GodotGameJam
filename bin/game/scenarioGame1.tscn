@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=4 uid="uid://dpkavkayfufwx"]
+[gd_scene load_steps=14 format=4 uid="uid://dpkavkayfufwx"]
 
 [ext_resource type="Script" path="res://bin/game/scenario_game_1.gd" id="1_24f1a"]
 [ext_resource type="PackedScene" uid="uid://d2trdu3ep3w5g" path="res://bin/tiles/tile_map_layer.tscn" id="1_aua2a"]
@@ -11,7 +11,6 @@
 [ext_resource type="PackedScene" uid="uid://cequ3akkrk0fj" path="res://bin/other/escalera2.tscn" id="8_03k7q"]
 [ext_resource type="PackedScene" uid="uid://1lql1fywh4v3" path="res://bin/other/escalera4.tscn" id="9_ida2s"]
 [ext_resource type="PackedScene" uid="uid://cfqttjrkxti13" path="res://bin/other/escalera5.tscn" id="11_k5heq"]
-[ext_resource type="PackedScene" uid="uid://busm227lfbeg3" path="res://bin/other/plataforma.tscn" id="12_no7je"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wbyd4"]
 texture = ExtResource("4_moave")

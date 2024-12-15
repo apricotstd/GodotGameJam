@@ -1,3 +1,4 @@
+res://assets
 res://bin/other
 res://bin/game
 res://bin/views/menu
@@ -5,7 +6,6 @@ res://assets/fondos
 res://
 C:/Users/Estefania/Documents/David/GodotGameJam/scripts
 res://scripts
-res://assets
 res://assets/fuentes
 res://assets/fondos/background
 res://bin/player
