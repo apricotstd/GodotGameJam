@@ -1,18 +1,15 @@
-res://bin/other
-res://bin/views/menu
 res://bin/game
+res://bin/other
+res://assets/fondos
+res://
+C:/Users/Estefania/Documents/David/GodotGameJam/scripts
+res://bin/views/menu
 res://scripts
 res://assets
-res://assets/fondos
 res://assets/fuentes
 res://assets/fondos/background
-res://
 res://bin/player
-<<<<<<< HEAD
 res://assets/botones
-=======
->>>>>>> shiro
-D:/Descargas/gamepj
 res://assets/sprites/nubes
 res://bin/tiles
 res://bin

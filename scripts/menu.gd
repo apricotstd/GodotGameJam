@@ -3,13 +3,8 @@ extends CanvasLayer
 var option = "res://bin/views/option/option1.tscn"
 
 func _ready():
+	Gl.set_player()
 	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-
 
 func _on_button_option_pressed():
 	sounButom()

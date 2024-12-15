@@ -1,11 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://dk42spwp1lrl3"]
+[gd_scene load_steps=6 format=3 uid="uid://dk42spwp1lrl3"]
 
 [ext_resource type="Texture2D" uid="uid://cdxwjcxnnutl5" path="res://assets/fondos/background/Escalerita.png" id="1_rmgsb"]
 [ext_resource type="Script" path="res://bin/other/escalera.gd" id="2_ounio"]
 [ext_resource type="Texture2D" uid="uid://dom31a5js53hh" path="res://assets/Area-Escalera.png" id="3_yodaw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hekmc"]
-size = Vector2(66, 105)
+size = Vector2(66, 46.125)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g7n6o"]
+size = Vector2(80, 16)
 
 [node name="Sprite2D" type="Sprite2D"]
 modulate = Color(1, 1, 1, 0.290196)
@@ -23,17 +26,31 @@ scale = Vector2(0.0428366, 0.0542207)
 texture = ExtResource("3_yodaw")
 
 [node name="subir" type="Area2D" parent="." groups=["escalera"]]
+position = Vector2(0, 160)
+metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="subir"]
-position = Vector2(1, 134.5)
 shape = SubResource("RectangleShape2D_hekmc")
 
 [node name="Bajar" type="Area2D" parent="." groups=["escalera"]]
-position = Vector2(-1, -508)
+position = Vector2(0, -696)
+metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bajar"]
-position = Vector2(-2, -209)
 shape = SubResource("RectangleShape2D_hekmc")
+
+[node name="pie" type="StaticBody2D" parent="."]
+position = Vector2(0, -656)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pie"]
+shape = SubResource("RectangleShape2D_g7n6o")
+one_way_collision = true
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(0, -832)
+
+[node name="Marker2D2" type="Marker2D" parent="."]
+position = Vector2(0, 64)
 
 [connection signal="body_entered" from="subir" to="." method="_on_subir_body_entered"]
 [connection signal="body_exited" from="subir" to="." method="_on_subir_body_exited"]
