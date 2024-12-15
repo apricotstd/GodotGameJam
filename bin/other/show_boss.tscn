@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://bin/other/show_boss.gd" id="1_l7fep"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ri15e"]
-size = Vector2(164, 132)
+size = Vector2(572, 132)
 
 [node name="ShowBoss" type="Area2D"]
 script = ExtResource("1_l7fep")
