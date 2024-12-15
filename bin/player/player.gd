@@ -69,3 +69,7 @@ func animateUp(v, ob):
 			state = 2
 			target = ob
 	pass
+
+func win():
+	$Camera2D/Game.win()
+	pass

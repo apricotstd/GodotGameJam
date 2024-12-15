@@ -152,6 +152,62 @@ theme_override_fonts/font = ExtResource("2_mdp4v")
 theme_override_font_sizes/font_size = 20
 text = "Quitar"
 
+[node name="Win" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Color" type="ColorRect" parent="Win"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0.56098, 0.52978, 0.45098)
+
+[node name="Label" type="Label" parent="Win"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -576.0
+offset_top = -138.5
+offset_right = 576.0
+offset_bottom = 138.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_mdp4v")
+theme_override_font_sizes/font_size = 70
+text = "Has logrado salir del mundo de los sueños, gracias por jugar"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 1
+
+[node name="Quitar" type="Button" parent="Win"]
+process_mode = 3
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -94.0
+offset_top = 210.0
+offset_right = 96.0
+offset_bottom = 281.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_mdp4v")
+theme_override_font_sizes/font_size = 20
+text = "Quitar"
+
 [node name="Opciones" type="Control" parent="."]
 visible = false
 layout_mode = 3
@@ -846,6 +902,61 @@ grow_horizontal = 2
 grow_vertical = 2
 texture_normal = ExtResource("3_30jfn")
 
+[node name="Controlles" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -124.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Label" type="Label" parent="Controlles"]
+layout_mode = 0
+offset_left = 89.0
+offset_top = -81.0
+offset_right = 166.0
+offset_bottom = -10.0
+theme_override_fonts/font = ExtResource("2_mdp4v")
+theme_override_font_sizes/font_size = 50
+text = "W"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="Controlles"]
+offset_left = 192.0
+offset_top = -13.0
+offset_right = 269.0
+offset_bottom = 58.0
+theme_override_fonts/font = ExtResource("2_mdp4v")
+theme_override_font_sizes/font_size = 50
+text = "D"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="Controlles"]
+offset_left = 3.0
+offset_top = -13.0
+offset_right = 80.0
+offset_bottom = 58.0
+theme_override_fonts/font = ExtResource("2_mdp4v")
+theme_override_font_sizes/font_size = 50
+text = "S"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="Controlles"]
+offset_left = 1823.0
+offset_top = -23.0
+offset_right = 1973.0
+offset_bottom = 48.0
+theme_override_fonts/font = ExtResource("2_mdp4v")
+theme_override_font_sizes/font_size = 50
+text = "Enter"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [node name="Lluvia" parent="." instance=ExtResource("12_u2lo1")]
 
 [node name="Timer" type="Timer" parent="."]
@@ -853,6 +964,7 @@ texture_normal = ExtResource("3_30jfn")
 [connection signal="pressed" from="Paused/Continue" to="." method="_on_continue_pressed"]
 [connection signal="pressed" from="Paused/opciones2" to="." method="_on_opciones_2_pressed"]
 [connection signal="pressed" from="Paused/Quitar" to="." method="_on_quitar_pressed"]
+[connection signal="pressed" from="Win/Quitar" to="." method="_on_quitar_pressed"]
 [connection signal="value_changed" from="Opciones/Control_opciones/Configuraciones/SoundControl/TextureButtonMusica/ControlMusica" to="." method="_on_control_musica_value_changed"]
 [connection signal="pressed" from="Opciones/ControlButtonPrincipales/ButtonControl" to="." method="_on_button_control_pressed"]
 [connection signal="pressed" from="Opciones/ControlButtonPrincipales/ButtonSonido" to="." method="_on_button_sonido_pressed"]
