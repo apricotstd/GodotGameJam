@@ -1,5 +1,5 @@
-TileMapLayer
 Sprite2D
+TileMapLayer
 CollisionShape2D
 CharacterBody2D
 Marker2D
