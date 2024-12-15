@@ -1,0 +1,43 @@
+[gd_scene load_steps=5 format=3 uid="uid://bs14temhq4mwq"]
+
+[ext_resource type="PackedScene" uid="uid://dpkavkayfufwx" path="res://bin/game/scenarioGame1.tscn" id="1_53vr8"]
+[ext_resource type="PackedScene" uid="uid://r3t6pn5n1k81" path="res://bin/other/show_boss.tscn" id="3_n8f43"]
+[ext_resource type="PackedScene" uid="uid://t846obte7pmw" path="res://bin/other/caida.tscn" id="4_h0583"]
+[ext_resource type="PackedScene" uid="uid://d3ykv2kimj8xb" path="res://bin/other/door.tscn" id="5_jkp55"]
+
+[node name="Escena2" type="Node2D"]
+
+[node name="ScenarioGame1" parent="." instance=ExtResource("1_53vr8")]
+metadata/_edit_lock_ = true
+
+[node name="ShowBoss" parent="." instance=ExtResource("3_n8f43")]
+position = Vector2(7146, 518)
+metadata/_edit_lock_ = true
+
+[node name="ShowBoss2" parent="." instance=ExtResource("3_n8f43")]
+position = Vector2(5070, 825)
+metadata/_edit_lock_ = true
+
+[node name="ShowBoss3" parent="." instance=ExtResource("3_n8f43")]
+position = Vector2(2789, 2315)
+
+[node name="ShowBoss4" parent="." instance=ExtResource("3_n8f43")]
+position = Vector2(-764, 1037)
+
+[node name="Caida" parent="." instance=ExtResource("4_h0583")]
+position = Vector2(1620, 3216)
+
+[node name="Door" parent="." instance=ExtResource("5_jkp55")]
+position = Vector2(-5720, 345)
+
+[node name="ShowBoss5" parent="." instance=ExtResource("3_n8f43")]
+position = Vector2(-2695, 1675)
+
+[node name="ShowBoss6" parent="." instance=ExtResource("3_n8f43")]
+position = Vector2(-908, 2304)
+
+[node name="ShowBoss7" parent="." instance=ExtResource("3_n8f43")]
+position = Vector2(-4125, 446)
+
+[node name="ShowBoss8" parent="." instance=ExtResource("3_n8f43")]
+position = Vector2(-2518, 446)

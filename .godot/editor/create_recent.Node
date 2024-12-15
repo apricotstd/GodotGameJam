@@ -1,28 +1,12 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 CollisionShape2D
 Area2D
 PathFollow2D
 Path2D
 Node2D
-=======
-=======
->>>>>>> ookami
 Node2D
-Area2D
 PathFollow2D
 Path2D
-CollisionShape2D
-<<<<<<< HEAD
->>>>>>> ookami
-=======
->>>>>>> ookami
 StaticBody2D
 CharacterBody2D
 Node
 Sprite2D
-Marker2D
-Sprite2D
-TileMapLayer
-AnimationPlayer
-Label

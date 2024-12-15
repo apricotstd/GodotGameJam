@@ -13,14 +13,14 @@
 [ext_resource type="Texture2D" uid="uid://c8rtkhxoond04" path="res://assets/player/idle/fotograma0000.png" id="9_gm1gc"]
 [ext_resource type="PackedScene" uid="uid://dcfdci87i4pdp" path="res://bin/player/bruja.tscn" id="9_rpnsd"]
 [ext_resource type="Texture2D" uid="uid://bqc3l7oh8gfjk" path="res://assets/player/move/fotograma0000.png" id="11_fue15"]
-[ext_resource type="Texture2D" uid="uid://4kk2gnfdfngy" path="res://assets/bruja/bruja.png" id="11_phpec"]
+[ext_resource type="Texture2D" uid="uid://bumrwm843wrq1" path="res://assets/bruja/bruja.png" id="11_phpec"]
 [ext_resource type="PackedScene" uid="uid://bhtm8o45feoxc" path="res://bin/other/lluvia.tscn" id="11_sb35w"]
 [ext_resource type="Texture2D" uid="uid://dayxeetx8ywo7" path="res://assets/player/move/fotograma0003.png" id="12_f7pv0"]
 [ext_resource type="Texture2D" uid="uid://cp6a7jv3mdrvj" path="res://assets/player/move/fotograma0006.png" id="13_wuagw"]
 [ext_resource type="Texture2D" uid="uid://cruyguae61im8" path="res://assets/player/move/fotograma0009.png" id="14_7svnm"]
 [ext_resource type="Texture2D" uid="uid://clkvnhm8l58l1" path="res://assets/player/move/fotograma0012.png" id="15_ra815"]
 [ext_resource type="FontFile" uid="uid://oc6h0d3ahcg0" path="res://assets/fuentes/FlyLegs.otf" id="20_7clls"]
-[ext_resource type="Texture2D" uid="uid://npwbbxgi87o5" path="res://assets/bruja/bruja2.png" id="20_v8xpg"]
+[ext_resource type="Texture2D" uid="uid://d07rxfq4h8s2q" path="res://assets/bruja/bruja2.png" id="20_v8xpg"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_digrn"]
 radius = 88.3629
