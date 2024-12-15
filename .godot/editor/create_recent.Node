@@ -1,12 +1,13 @@
-TileMapLayer
+Node
 Sprite2D
+Node2D
+Marker2D
+TileMapLayer
 CollisionShape2D
 CharacterBody2D
-Marker2D
 StaticBody2D
 Area2D
 AnimationPlayer
-Node2D
 Label
 Parallax2D
 TextureRect
