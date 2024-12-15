@@ -6,6 +6,7 @@ var player = "res://bin/player/player.tscn"
 func initGame():
 	addPlayer()
 	bruja.show()
+	bruja.desaparecer()
 	bruja.emit_song()
 	pass
 
