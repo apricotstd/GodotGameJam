@@ -7,19 +7,22 @@
 
 [node name="ScenarioGame1" parent="." instance=ExtResource("1_53vr8")]
 
-[node name="plataforma" parent="." instance=ExtResource("2_vlpfh")]
-position = Vector2(7601, 2081)
+[node name="GrPlatform" type="Node2D" parent="."]
 
-[node name="GroupDirection" type="Node" parent="plataforma"]
+[node name="plataforma" parent="GrPlatform" instance=ExtResource("2_vlpfh")]
+position = Vector2(6383, 635)
 
-[node name="firts" type="Marker2D" parent="plataforma/GroupDirection"]
-position = Vector2(8015, 1818)
+[node name="GroupDirection" type="Node2D" parent="GrPlatform"]
+position = Vector2(6383, 635)
 
-[node name="second" type="Marker2D" parent="plataforma/GroupDirection"]
-position = Vector2(7263, 1811)
+[node name="firts" type="Marker2D" parent="GrPlatform/GroupDirection"]
+position = Vector2(-899, -666)
 
-[node name="second2" type="Marker2D" parent="plataforma/GroupDirection"]
-position = Vector2(7677, 2111)
+[node name="second" type="Marker2D" parent="GrPlatform/GroupDirection"]
+position = Vector2(-1965, 945)
+
+[node name="second2" type="Marker2D" parent="GrPlatform/GroupDirection"]
+position = Vector2(157, 13)
 
 [node name="plataforma2" parent="." instance=ExtResource("2_vlpfh")]
 position = Vector2(667, 339)
