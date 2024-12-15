@@ -1,7 +1,25 @@
-[gd_scene load_steps=2 format=3 uid="uid://bs14temhq4mwq"]
+[gd_scene load_steps=3 format=3 uid="uid://bs14temhq4mwq"]
 
 [ext_resource type="PackedScene" uid="uid://dpkavkayfufwx" path="res://bin/game/scenarioGame1.tscn" id="1_53vr8"]
+[ext_resource type="PackedScene" uid="uid://busm227lfbeg3" path="res://bin/other/plataforma.tscn" id="2_vlpfh"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="ScenarioGame1" parent="." instance=ExtResource("1_53vr8")]
+
+[node name="plataforma" parent="." instance=ExtResource("2_vlpfh")]
+position = Vector2(7601, 2081)
+
+[node name="GroupDirection" type="Node" parent="plataforma"]
+
+[node name="firts" type="Marker2D" parent="plataforma/GroupDirection"]
+position = Vector2(8015, 1818)
+
+[node name="second" type="Marker2D" parent="plataforma/GroupDirection"]
+position = Vector2(7263, 1811)
+
+[node name="second2" type="Marker2D" parent="plataforma/GroupDirection"]
+position = Vector2(7677, 2111)
+
+[node name="plataforma2" parent="." instance=ExtResource("2_vlpfh")]
+position = Vector2(667, 339)
