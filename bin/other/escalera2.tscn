@@ -1,49 +1,67 @@
-[gd_scene load_steps=5 format=3 uid="uid://cequ3akkrk0fj"]
+[gd_scene load_steps=6 format=3 uid="uid://cequ3akkrk0fj"]
 
 [ext_resource type="Texture2D" uid="uid://cdxwjcxnnutl5" path="res://assets/fondos/background/Escalerita.png" id="1_6suoa"]
 [ext_resource type="Script" path="res://bin/other/escalera.gd" id="2_fmptg"]
 [ext_resource type="Texture2D" uid="uid://dom31a5js53hh" path="res://assets/Area-Escalera.png" id="3_4m6x8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hekmc"]
-size = Vector2(66, 105)
+size = Vector2(66, 49.25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dg87c"]
+size = Vector2(80, 16)
 
 [node name="Sprite2D" type="Sprite2D"]
 modulate = Color(1, 1, 1, 0.290196)
+position = Vector2(0, 54)
 texture = ExtResource("1_6suoa")
 script = ExtResource("2_fmptg")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(13.5, -272)
+position = Vector2(13.5, -262)
 scale = Vector2(0.0428366, 0.0542207)
 texture = ExtResource("3_4m6x8")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
-position = Vector2(13, -524)
+position = Vector2(13, -471)
 scale = Vector2(0.0428366, 0.0542207)
 texture = ExtResource("3_4m6x8")
 
 [node name="Sprite2D3" type="Sprite2D" parent="."]
-position = Vector2(12, -825)
+position = Vector2(12, -782)
 scale = Vector2(0.0428366, 0.0542207)
 texture = ExtResource("3_4m6x8")
 
 [node name="Sprite2D4" type="Sprite2D" parent="."]
-position = Vector2(12, -1124)
+position = Vector2(12, -993)
 scale = Vector2(0.0428366, 0.0542207)
 texture = ExtResource("3_4m6x8")
 
 [node name="subir" type="Area2D" parent="." groups=["escalera"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="subir"]
-position = Vector2(1, 134.5)
+position = Vector2(1, 154.75)
 shape = SubResource("RectangleShape2D_hekmc")
 
 [node name="Bajar" type="Area2D" parent="." groups=["escalera"]]
 position = Vector2(1, -1112)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bajar"]
-position = Vector2(-2, -209)
+position = Vector2(-2, -123.375)
 shape = SubResource("RectangleShape2D_hekmc")
+
+[node name="pie" type="StaticBody2D" parent="."]
+position = Vector2(0, -656)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pie"]
+position = Vector2(0, -472)
+shape = SubResource("RectangleShape2D_dg87c")
+one_way_collision = true
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(0, -1350)
+
+[node name="Marker2D2" type="Marker2D" parent="."]
+position = Vector2(0, 64)
 
 [connection signal="body_entered" from="subir" to="." method="_on_subir_body_entered"]
 [connection signal="body_exited" from="subir" to="." method="_on_subir_body_exited"]

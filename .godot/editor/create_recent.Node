@@ -1,7 +1,11 @@
+<<<<<<< HEAD
 Node
 Sprite2D
 Node2D
 Marker2D
+=======
+Sprite2D
+>>>>>>> ookami
 TileMapLayer
 CollisionShape2D
 CharacterBody2D
