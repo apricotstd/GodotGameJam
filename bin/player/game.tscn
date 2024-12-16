@@ -1,8 +1,7 @@
-[gd_scene load_steps=12 format=3 uid="uid://ryr2vc4aj4y"]
+[gd_scene load_steps=11 format=3 uid="uid://ryr2vc4aj4y"]
 
 [ext_resource type="Script" path="res://bin/player/game.gd" id="1_ydbv1"]
 [ext_resource type="FontFile" uid="uid://oc6h0d3ahcg0" path="res://assets/fuentes/FlyLegs.otf" id="2_mdp4v"]
-[ext_resource type="Texture2D" uid="uid://s4hjdinjkg2b" path="res://assets/botones/marco6.png" id="3_6r3ab"]
 [ext_resource type="Texture2D" uid="uid://ceucmvln8rjlf" path="res://assets/botones/General_Icon_Cancel_Close.png" id="3_30jfn"]
 [ext_resource type="Script" path="res://scripts/option.gd" id="3_olrfy"]
 [ext_resource type="Texture2D" uid="uid://b6jw865kwau2e" path="res://assets/botones/boton-2.png" id="4_1xljc"]
@@ -249,12 +248,12 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -488.0
-offset_top = -446.5
+offset_top = -550.0
 offset_right = 488.0
-offset_bottom = 446.5
+offset_bottom = 447.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("3_6r3ab")
+texture = ExtResource("8_8puyx")
 expand_mode = 1
 
 [node name="Label" type="Label" parent="Opciones/Control_opciones/TextureRect"]
@@ -262,10 +261,10 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -157.0
-offset_top = 79.0
-offset_right = 129.0
-offset_bottom = 146.0
+offset_left = -155.0
+offset_top = 171.0
+offset_right = 131.0
+offset_bottom = 238.0
 grow_horizontal = 2
 theme_override_fonts/font = ExtResource("2_mdp4v")
 theme_override_font_sizes/font_size = 70
@@ -327,7 +326,8 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_mdp4v")
 theme_override_font_sizes/font_size = 34
-text = "Arriba"
+text = "saltar
+"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
@@ -398,7 +398,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_mdp4v")
 theme_override_font_sizes/font_size = 34
-text = "Abajo"
+text = "derecha"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
@@ -428,7 +428,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_mdp4v")
 theme_override_font_sizes/font_size = 45
-text = "s"
+text = "d"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -532,15 +532,15 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.513
 anchor_bottom = 0.5
-offset_left = -66.0
+offset_left = -86.0
 offset_top = -19.0
-offset_right = 57.972
+offset_right = 73.452
 offset_bottom = 14.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_mdp4v")
 theme_override_font_sizes/font_size = 34
-text = "Derecha"
+text = "Opciones"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
@@ -549,7 +549,7 @@ autowrap_mode = 3
 layout_mode = 0
 offset_left = 522.0
 offset_top = 8.0
-offset_right = 611.0
+offset_right = 711.0
 offset_bottom = 66.0
 texture_normal = ExtResource("8_8puyx")
 ignore_texture_size = true
@@ -562,15 +562,15 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -42.5
+offset_left = -87.5
 offset_top = -26.0
-offset_right = 40.5
+offset_right = 92.5
 offset_bottom = 25.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_mdp4v")
 theme_override_font_sizes/font_size = 45
-text = "d"
+text = "enter"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -592,9 +592,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -331.0
-offset_top = -240.0
+offset_top = -158.0
 offset_right = 309.0
-offset_bottom = -140.0
+offset_bottom = -58.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -742,6 +742,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="TextureButton1" type="TextureRect" parent="Opciones/Control_opciones/Configuraciones/SoundControl"]
+visible = false
 layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
@@ -754,6 +755,7 @@ grow_vertical = 2
 expand_mode = 1
 
 [node name="TextureRect" type="TextureRect" parent="Opciones/Control_opciones/Configuraciones/SoundControl/TextureButton1"]
+visible = false
 layout_mode = 0
 offset_left = -10.0
 offset_top = -11.0
@@ -763,6 +765,7 @@ texture = ExtResource("8_8puyx")
 expand_mode = 1
 
 [node name="Label" type="Label" parent="Opciones/Control_opciones/Configuraciones/SoundControl/TextureButton1"]
+visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -780,6 +783,7 @@ text = "Lenguaje
 "
 
 [node name="Lenguaje" type="OptionButton" parent="Opciones/Control_opciones/Configuraciones/SoundControl"]
+visible = false
 layout_mode = 1
 anchors_preset = 6
 anchor_left = 1.0
@@ -894,10 +898,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 338.0
-offset_top = -460.0
-offset_right = 463.0
-offset_bottom = -335.0
+offset_left = 312.0
+offset_top = -440.0
+offset_right = 437.0
+offset_bottom = -315.0
 grow_horizontal = 2
 grow_vertical = 2
 texture_normal = ExtResource("3_30jfn")
@@ -925,6 +929,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Label2" type="Label" parent="Controlles"]
+layout_mode = 0
 offset_left = 192.0
 offset_top = -13.0
 offset_right = 269.0
@@ -936,6 +941,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Label3" type="Label" parent="Controlles"]
+layout_mode = 0
 offset_left = 3.0
 offset_top = -13.0
 offset_right = 80.0
@@ -947,6 +953,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Label4" type="Label" parent="Controlles"]
+layout_mode = 0
 offset_left = 1823.0
 offset_top = -23.0
 offset_right = 1973.0

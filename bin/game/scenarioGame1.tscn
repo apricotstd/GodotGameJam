@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=4 uid="uid://dpkavkayfufwx"]
+[gd_scene load_steps=17 format=4 uid="uid://dpkavkayfufwx"]
 
 [ext_resource type="Script" path="res://bin/game/scenario_game_1.gd" id="1_24f1a"]
 [ext_resource type="PackedScene" uid="uid://d2trdu3ep3w5g" path="res://bin/tiles/tile_map_layer.tscn" id="1_aua2a"]
@@ -12,6 +12,8 @@
 [ext_resource type="PackedScene" uid="uid://1lql1fywh4v3" path="res://bin/other/escalera4.tscn" id="9_ida2s"]
 [ext_resource type="PackedScene" uid="uid://cfqttjrkxti13" path="res://bin/other/escalera5.tscn" id="11_k5heq"]
 [ext_resource type="PackedScene" uid="uid://busm227lfbeg3" path="res://bin/other/plataforma.tscn" id="12_no7je"]
+[ext_resource type="Script" path="res://scripts/sonidos.gd" id="13_xaea6"]
+[ext_resource type="AudioStream" uid="uid://xsal50sch6os" path="res://assets/sonidos/terror-Patilla.mp3" id="14_h66g8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wbyd4"]
 texture = ExtResource("4_moave")
@@ -765,3 +767,16 @@ position = Vector2(40, 1368)
 
 [node name="second" type="Marker2D" parent="plataformas/GrPlatform6/GroupDirection"]
 position = Vector2(40, 680)
+
+[node name="GrupSong" type="Node" parent="."]
+script = ExtResource("13_xaea6")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="GrupSong"]
+stream = ExtResource("14_h66g8")
+volume_db = -1.253
+autoplay = true
+parameters/looping = true
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="GrupSong"]
+volume_db = -22.299
+pitch_scale = 1.1
