@@ -10,7 +10,7 @@
 [ext_resource type="Script" path="res://bin/game/video.gd" id="8_h3iar"]
 [ext_resource type="PackedScene" uid="uid://cffxofhfvb623" path="res://bin/other/piramide.tscn" id="8_rpy44"]
 [ext_resource type="Texture2D" uid="uid://cxrpoy5y4uy0a" path="res://assets/player/espejo/espejo.png" id="8_skfs3"]
-[ext_resource type="Texture2D" uid="uid://c8rtkhxoond04" path="res://assets/player/idle/fotograma0000.png" id="9_gm1gc"]
+[ext_resource type="Texture2D" uid="uid://lmv0nrtlfka4" path="res://assets/player/idle/fotograma0000.png" id="9_gm1gc"]
 [ext_resource type="PackedScene" uid="uid://dcfdci87i4pdp" path="res://bin/player/bruja.tscn" id="9_rpnsd"]
 [ext_resource type="Texture2D" uid="uid://bqc3l7oh8gfjk" path="res://assets/player/move/fotograma0000.png" id="11_fue15"]
 [ext_resource type="Texture2D" uid="uid://bumrwm843wrq1" path="res://assets/bruja/bruja.png" id="11_phpec"]
