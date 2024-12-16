@@ -836,24 +836,27 @@ texture_hover = ExtResource("4_1xljc")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="Label2" type="Label" parent="Opciones/ControlButtonPrincipales/ButtonControl"]
+[node name="Label" type="Label" parent="Opciones/ControlButtonPrincipales/ButtonControl"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -59.0
-offset_top = -14.5
-offset_right = 55.0
-offset_bottom = 8.5
+offset_left = -120.0
+offset_top = -35.0
+offset_right = 104.0
+offset_bottom = 29.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_colors/font_color = Color(0.674768, 0.811164, 0.289357, 1)
+theme_override_colors/font_color = Color(0.584122, 0.187261, 0.203543, 1)
 theme_override_colors/font_shadow_color = Color(0.0358673, 0.110612, 0.0470687, 1)
 theme_override_colors/font_outline_color = Color(0.242738, 0.506672, 0.499439, 1)
-theme_override_font_sizes/font_size = 24
-text = "Control"
+theme_override_fonts/font = ExtResource("2_mdp4v")
+theme_override_font_sizes/font_size = 42
+text = "controles"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="ButtonSonido" type="TextureButton" parent="Opciones/ControlButtonPrincipales"]
 layout_mode = 1
@@ -871,24 +874,27 @@ texture_hover = ExtResource("4_1xljc")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="Label2" type="Label" parent="Opciones/ControlButtonPrincipales/ButtonSonido"]
+[node name="Label" type="Label" parent="Opciones/ControlButtonPrincipales/ButtonSonido"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -59.0
-offset_top = -14.5
-offset_right = 55.0
-offset_bottom = 8.5
+offset_left = -120.0
+offset_top = -35.0
+offset_right = 104.0
+offset_bottom = 29.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_colors/font_color = Color(0.674768, 0.811164, 0.289357, 1)
+theme_override_colors/font_color = Color(0.584122, 0.187261, 0.203543, 1)
 theme_override_colors/font_shadow_color = Color(0.0358673, 0.110612, 0.0470687, 1)
 theme_override_colors/font_outline_color = Color(0.242738, 0.506672, 0.499439, 1)
-theme_override_font_sizes/font_size = 24
-text = "SONIDO"
+theme_override_fonts/font = ExtResource("2_mdp4v")
+theme_override_font_sizes/font_size = 42
+text = "sonido"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="return" type="TextureButton" parent="Opciones"]
 process_mode = 3
