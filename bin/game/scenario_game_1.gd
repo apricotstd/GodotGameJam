@@ -11,4 +11,5 @@ func _ready() -> void:
 func createBoss():
 	var newBruja = load(bruja).instantiate()
 	$Marker2D.add_child(newBruja)
+	newBruja.emit_song()
 	pass

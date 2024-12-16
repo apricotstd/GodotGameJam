@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://dcfdci87i4pdp"]
+[gd_scene load_steps=7 format=3 uid="uid://dcfdci87i4pdp"]
 
 [ext_resource type="Script" path="res://bin/player/bruja.gd" id="1_oekju"]
 [ext_resource type="Texture2D" uid="uid://cfroh24myd2yp" path="res://assets/bruja/brujalado.png" id="2_6io7w"]
@@ -6,11 +6,15 @@
 [ext_resource type="FontFile" uid="uid://oc6h0d3ahcg0" path="res://assets/fuentes/FlyLegs.otf" id="4_1co1w"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_w85vq"]
-radius = 194.0
-height = 646.0
+radius = 137.832
+height = 508.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bh4wn"]
+size = Vector2(370.455, 312)
 
 [node name="Bruja" type="CharacterBody2D"]
 script = ExtResource("1_oekju")
+metadata/_edit_lock_ = true
 
 [node name="Contact" type="Area2D" parent="."]
 
@@ -19,12 +23,13 @@ scale = Vector2(1.11005, 1)
 shape = SubResource("CapsuleShape2D_w85vq")
 
 [node name="bruja" type="Sprite2D" parent="."]
-scale = Vector2(0.482639, 0.43099)
+scale = Vector2(0.382986, 0.348307)
 texture = ExtResource("2_6io7w")
 
 [node name="Col" type="CollisionShape2D" parent="."]
+position = Vector2(-1.5, -1)
 scale = Vector2(0.44, 1)
-shape = SubResource("CapsuleShape2D_w85vq")
+shape = SubResource("RectangleShape2D_bh4wn")
 
 [node name="sonidp" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_dn4yj")
